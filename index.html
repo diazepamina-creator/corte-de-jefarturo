@@ -1,0 +1,1728 @@
+<!doctype html>
+<html lang="es" data-tema="sable" data-texto="normal" data-fuente="legible" data-movimiento="normal">
+<head>
+<!--
+  La corte de Jefarturo
+  © Andrés Asensio · CC BY-NC-ND 4.0 · https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es
+  Versión de aula generada el 2026-10-07 a partir del original 0d2cd98.
+-->
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Andrés Asensio">
+<meta name="description" content="Potencias y raíces para 1.º y 2.º de ESO: el tablero del trigo que se dobla, el árbol del reino, el patio cuadrado, el aljibe y la cuenta del tesorero.">
+<meta name="theme-color" content="#16121F">
+<title>La corte de Jefarturo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;600&family=Space+Mono:wght@400;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --fondo:#16121F; --panel:#211A2C; --panel2:#2A2237; --linea:#453A55;
+  --tinta:#EFE3C6; --tenue:#B1A48C;
+  --gules:#C93A46; --gulesO:#8E1F2A; --azur:#5C8BD0; --azurO:#2C5A96; --sinople:#6BA478; --purpura:#A75E9C;
+  --oro:#D9A441; --plata:#B8B4A8; --sable:#16121F; --pergamino:#EFE3C6;
+  --acento:var(--purpura); --acentoO:#6E3A66; --acentoT:#16121F; --mal:#E8562E;
+  --figura:#EFE3C6; --figuraO:#B8B4A8; --hueco:#16121F;
+  --sombra:rgba(0,0,0,.55); --cuenta:#D9A441; --texto:15px;
+}
+[data-tema="pergamino"]{
+  --fondo:#EFE3C6; --panel:#F7EDD6; --panel2:#EADBB8; --linea:#C9B48C;
+  --tinta:#2A2118; --tenue:#6E5A42;
+  --gules:#A8202C; --gulesO:#7A1620; --azur:#2C5A96; --azurO:#1E3F6B; --sinople:#3B7448; --purpura:#6B2E63;
+  --oro:#B98A22; --plata:#8D8A80; --sable:#16121F; --pergamino:#EFE3C6;
+  --acentoO:#4A1F44; --acentoT:#F7EDD6; --mal:#B3341A;
+  --figura:#2A2118; --figuraO:#4A3A2A; --hueco:#EFE3C6;
+  --sombra:rgba(42,33,24,.2); --cuenta:#7A1620;
+}
+[data-texto="grande"]{--texto:17.5px}
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+html{background:var(--fondo)}
+html,body{overflow-x:clip}
+body{margin:0;color:var(--tinta);background:var(--fondo);
+  font-family:'Atkinson Hyperlegible',system-ui,sans-serif;font-size:var(--texto);line-height:1.5;
+  max-width:820px;margin:0 auto;padding:0 14px 40px}
+[data-fuente="inscripcion"] body{font-family:'Grenze Gotisch','Atkinson Hyperlegible',serif;font-size:calc(var(--texto) + 2px)}
+[data-movimiento="menos"] *{animation-duration:.001ms !important;transition-duration:.001ms !important}
+
+.almenas{height:18px;margin:0 -14px;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='18'><path d='M0 0 V12 H10 V18 H22 V12 H32 V0 Z' fill='%23A75E9C'/></svg>") repeat-x left top / 32px 18px}
+[data-tema="pergamino"] .almenas{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='18'><path d='M0 0 V12 H10 V18 H22 V12 H32 V0 Z' fill='%236B2E63'/></svg>")}
+
+header .cabeza{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-top:14px}
+h1{font-family:'Grenze Gotisch',serif;font-weight:600;font-size:34px;letter-spacing:.3px;margin:0;color:var(--acento);line-height:1}
+header .sub{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--tenue);margin:4px 0 0}
+.granos{margin-left:auto;display:flex;align-items:center;gap:8px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:1px;color:var(--tenue);
+  border:1px solid var(--linea);border-radius:20px;padding:4px 12px;transition:border-color .3s, box-shadow .3s}
+.granos b{color:var(--acento);font-weight:400;font-variant-numeric:tabular-nums}
+.granos svg{width:22px;height:14px}
+.granos.lluvia{border-color:var(--oro);box-shadow:0 0 18px var(--oro)}
+.barra{display:flex;gap:2px 14px;flex-wrap:wrap;margin:10px 0 0;font-family:'Grenze Gotisch',serif;font-size:19px;letter-spacing:.4px}
+.barra a,.barra button{font:inherit;color:var(--tenue);background:none;border:0;padding:4px 0;cursor:pointer;text-decoration:none}
+.barra a:hover,.barra button:hover,.barra button[aria-pressed="true"]{color:var(--acento)}
+.barra a:focus-visible,.barra button:focus-visible{outline:2px solid var(--oro);outline-offset:2px}
+.franja{margin:12px 0 0;padding:8px 12px;border:1px solid var(--linea);border-radius:10px;background:var(--panel);display:grid;grid-template-columns:38px 1fr;gap:6px 10px;align-items:center}
+.franja .escudo{grid-row:1/3;width:34px;height:40px}
+.franja .escudo svg{width:100%;height:100%;display:block}
+.franja .linea1{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.franja .rango{font-family:'Grenze Gotisch',serif;font-size:19px;color:var(--acento);letter-spacing:.3px}
+.franja .rango small{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:var(--tenue);margin-left:8px}
+.franja .cuenta{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--tenue)}
+.franja .barraR{height:6px;border-radius:3px;background:var(--fondo);overflow:hidden}
+.franja .barraR i{display:block;height:100%;width:0;border-radius:3px;background:linear-gradient(90deg,var(--acentoO),var(--acento));transition:width .5s ease}
+
+.panel{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--linea);border-radius:12px;
+  padding:14px 14px 12px;margin:10px 0;box-shadow:0 6px 18px var(--sombra);position:relative}
+.salaRot{margin:-2px 0 10px}
+.salaRot b{font-family:'Grenze Gotisch',serif;font-weight:600;font-size:22px;letter-spacing:.3px;color:var(--acento)}
+.salaRot b::before{content:'';display:inline-block;width:10px;height:12px;background:var(--acento);margin-right:8px;vertical-align:-1px;clip-path:polygon(0 0,100% 0,50% 100%)}
+.salaRot span{font-family:'Grenze Gotisch',serif;font-size:16px;color:var(--tenue);margin-left:8px}
+.fila{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.etq{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:var(--tenue);min-width:74px}
+button.n{font-family:'Space Mono',monospace;font-weight:700;font-size:14px;min-width:34px;min-height:34px;padding:5px 9px;border-radius:8px;
+  border:1px solid var(--linea);background:var(--panel);color:var(--tinta);cursor:pointer}
+button.n[aria-pressed="true"]{background:var(--acento);border-color:var(--acento);color:var(--acentoT)}
+button.n.v{font-family:'Grenze Gotisch',serif;font-weight:400;font-size:16px;letter-spacing:.3px}
+button.b{font-family:'Grenze Gotisch',serif;font-size:17px;letter-spacing:.4px;min-height:36px;padding:5px 14px;border-radius:9px;
+  border:1px solid var(--linea);background:var(--panel);color:var(--tinta);cursor:pointer}
+button.b:hover{border-color:var(--acento)}
+button.b.ok{background:var(--acento);border-color:var(--acento);color:var(--acentoT)}
+button.b:disabled{opacity:.45;cursor:default}
+button.b[aria-pressed="true"]{border-color:var(--acento);color:var(--acento)}
+button.b.armado{border-color:var(--mal);color:var(--mal)}
+button:focus-visible{outline:2px solid var(--oro);outline-offset:2px}
+.escena{background:var(--fondo);border:1px solid var(--linea);border-radius:10px;padding:10px;margin-top:10px;overflow-x:auto;position:relative}
+.escena svg{display:block;width:100%;height:auto}
+.lectura{margin:10px 0 0;font-size:var(--texto);line-height:1.55}
+.lectura b{color:var(--acento)}
+.lectura .cuenta{font-family:'Space Mono',monospace;font-size:13.5px;color:var(--cuenta);display:block;margin:6px 0 0;overflow-x:auto;white-space:nowrap;padding-bottom:2px}
+.lectura .def{display:block;margin:0 0 6px;padding:6px 10px;border-left:3px solid var(--purpura);font-family:'Grenze Gotisch',serif;font-size:calc(var(--texto) + 3px);color:var(--tinta);line-height:1.35}
+.lectura .murmullo{display:block;margin-top:6px;font-family:'Grenze Gotisch',serif;font-size:15px;color:var(--tenue)}
+
+.encargo{padding-left:70px;min-height:82px}
+.cara{position:absolute;left:12px;top:11px;width:46px;height:48px}
+.cara svg{width:100%;height:100%;display:block}
+.cara.toca{cursor:pointer}
+.quien{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--azur);margin-bottom:4px}
+.informe .quien{color:var(--oro)}
+.informe{border-left:3px solid var(--oro)}
+.informe.mal{border-left-color:var(--mal)}
+.encTxt{margin:0;font-size:var(--texto);line-height:1.55}
+.encTxt b{color:var(--acento)}
+.ops{display:grid;gap:6px;margin:10px 0 4px}
+.op{font-family:inherit;font-size:calc(var(--texto) - 1px);text-align:left;padding:10px 12px;border-radius:9px;border:1px solid var(--linea);
+  background:var(--panel);color:var(--tinta);cursor:pointer;line-height:1.4}
+.op[aria-pressed="true"]{border-color:var(--acento);background:var(--panel2)}
+.op.fallada{border-color:var(--mal);opacity:.65}
+.paso{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--tenue);margin-left:auto}
+
+.asomo{position:absolute;pointer-events:none;z-index:4;opacity:0;overflow:hidden;
+  transition:transform .44s cubic-bezier(.34,1.56,.64,1), opacity .2s ease}
+.asomo svg{width:100%;height:auto;display:block;filter:drop-shadow(0 3px 8px rgba(0,0,0,.5))}
+.asomo.arriba{right:14px;top:0;width:62px;transform:translateY(20px)}
+.asomo.arriba.mira{opacity:1;transform:translateY(calc(-64% + 2px))}
+.asomo.arriba.mira.falla{transform:translateY(calc(-42% + 2px));transition:transform .5s ease-out, opacity .2s ease}
+.asomo.lado{right:0;top:18px;width:70px;transform:translateX(80px)}
+.asomo.lado.mira{opacity:1;transform:translateX(26px)}
+.asomo.entero{right:14px;top:-10px;width:76px;transform:translateY(-20px) scale(.6)}
+.asomo.entero.mira{opacity:1;transform:translateY(-70%) scale(1)}
+.globo{position:absolute;right:96px;top:22px;max-width:200px;background:var(--pergamino);color:#2A2118;border-radius:12px;padding:8px 11px;
+  font-size:13px;line-height:1.35;z-index:5;opacity:0;transform:translateY(6px);transition:opacity .3s ease,transform .3s ease;pointer-events:none}
+.globo::after{content:'';position:absolute;right:-8px;top:14px;border:6px solid transparent;border-left-color:var(--pergamino)}
+.globo.mira{opacity:1;transform:none}
+.cruza{position:absolute;left:-90px;bottom:54px;width:84px;pointer-events:none;z-index:6;animation:cruza 4s linear forwards}
+.cruza svg{width:100%;height:auto;display:block;filter:drop-shadow(0 3px 8px rgba(0,0,0,.45))}
+.cruza b{position:absolute;left:84px;bottom:14px;white-space:nowrap;background:var(--pergamino);color:#2A2118;border-radius:10px;padding:4px 9px;font-size:11.5px;font-weight:400;font-family:'Space Mono',monospace}
+@keyframes cruza{from{left:-90px}to{left:100%}}
+.hermanos{position:absolute;right:16px;top:-56px;width:120px;pointer-events:none;z-index:5}
+.hermanos svg{width:100%;height:auto;display:block;filter:drop-shadow(0 3px 8px rgba(0,0,0,.5));animation:sube .5s cubic-bezier(.34,1.56,.64,1)}
+.hermanos b{position:absolute;left:-4px;top:-26px;white-space:nowrap;background:var(--pergamino);color:#2A2118;border-radius:10px;padding:4px 9px;font-size:11.5px;font-weight:400;font-family:'Grenze Gotisch',serif}
+@keyframes sube{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+.barba{position:absolute;left:24px;top:52px;width:22px;height:0;pointer-events:none;z-index:3;transition:height .5s cubic-bezier(.34,1.56,.64,1)}
+.barba svg{width:100%;height:100%;display:block}
+.chispa{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--oro);pointer-events:none;z-index:6;animation:chispea 1.1s ease-out forwards;box-shadow:0 0 8px var(--oro)}
+@keyframes chispea{from{opacity:1;transform:translate(0,0) scale(1)}to{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.2)}}
+.cara.magia svg{filter:drop-shadow(0 0 6px var(--oro)) drop-shadow(0 0 14px var(--oro));transition:filter .3s}
+.grano{position:absolute;width:7px;height:11px;border-radius:50%;background:var(--oro);pointer-events:none;z-index:6;animation:cae linear forwards}
+@keyframes cae{from{transform:translateY(-30px) rotate(0)}to{transform:translateY(420px) rotate(300deg);opacity:0}}
+.lanzaRota{position:absolute;left:50%;top:-8px;width:220px;margin-left:-110px;pointer-events:none;z-index:7}
+.lanzaRota svg{width:100%;height:auto;display:block}
+.lanzaRota .mitad1{animation:rompe1 1.1s ease-out forwards;transform-origin:110px 10px}
+.lanzaRota .mitad2{animation:rompe2 1.1s ease-out forwards;transform-origin:110px 10px}
+@keyframes rompe1{to{transform:translate(-60px,40px) rotate(-38deg);opacity:0}}
+@keyframes rompe2{to{transform:translate(60px,40px) rotate(38deg);opacity:0}}
+
+.listaEnc{margin-top:8px;max-height:260px;overflow-y:auto;border:1px solid var(--linea);border-radius:9px;background:var(--fondo)}
+.listaEnc button{display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--linea);color:var(--tenue);cursor:pointer;
+  font-family:inherit;font-size:13px;padding:7px 10px;line-height:1.35}
+.listaEnc button:last-child{border-bottom:0}
+.listaEnc button:hover{background:var(--panel2);color:var(--tinta)}
+.listaEnc button b{color:var(--acento);font-family:'Space Mono',monospace;font-size:11px;margin-right:6px}
+.listaEnc button.hecho b{color:var(--sinople)}
+.listaEnc button.actual{color:var(--tinta);background:var(--panel2)}
+#diag{font-family:'Space Mono',monospace;font-size:11.5px;line-height:1.5;margin-top:10px}
+#diag .ok{color:var(--sinople)} #diag .ko{color:var(--mal)}
+.glosa{border-top:1px solid var(--linea);padding:9px 0;display:grid;grid-template-columns:120px 1fr;gap:4px 12px}
+.glosa:last-child{border-bottom:1px solid var(--linea)}
+.glosa b{font-family:'Grenze Gotisch',serif;color:var(--acento);font-size:19px;font-weight:600}
+.glosa i{font-family:'Space Mono',monospace;font-style:normal;font-size:10px;color:var(--tenue);display:block;letter-spacing:1px}
+.glosa p{margin:0;font-size:14px;color:var(--tinta)}
+.glosa.marca{background:rgba(217,164,65,.1);border-radius:8px;padding:9px 8px}
+@media (max-width:460px){ .glosa{grid-template-columns:1fr} }
+.deuda{border:1px solid var(--linea);border-radius:10px;padding:10px 12px;margin-top:8px;background:var(--fondo)}
+.deuda summary{cursor:pointer;font-weight:700;color:var(--tinta);font-size:15px;list-style:none;display:flex;gap:10px;align-items:baseline}
+.deuda summary::before{content:'▸';color:var(--acento);font-size:13px}
+.deuda[open] summary::before{content:'▾'}
+.deuda p{font-size:14px;color:var(--tinta);margin:8px 0 0}
+.aviso{font-size:13px;color:var(--tenue);margin:8px 0 0}
+.vetula .latin{font-family:'Grenze Gotisch',serif;font-size:22px;color:var(--oro);margin:6px 0 2px;line-height:1.3}
+.vetula .trad{font-style:italic;color:var(--tenue);margin:0 0 10px;font-size:14px}
+
+.tipos{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tipos button.b{font-size:15px;padding:5px 10px;min-height:34px}
+.ejer{font-size:17px;margin:14px 0 8px;line-height:1.5}
+.ejer b{color:var(--acento)}
+.resp{font-family:'Space Mono',monospace;font-size:16px;padding:8px 10px;border-radius:9px;border:1px solid var(--linea);background:var(--fondo);color:var(--tinta);width:150px}
+.veredicto{margin-top:9px;padding:9px 11px;border:1px solid var(--linea);border-radius:9px;font-size:14px;color:var(--tinta);background:var(--fondo)}
+.veredicto.bien{border-color:var(--oro)}
+.veredicto b{color:var(--acento)}
+.marcador{display:flex;gap:16px;margin-top:8px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--tenue)}
+.marcador b{color:var(--acento);font-size:13px;margin-left:4px}
+.hoja{display:none}
+body.imprimiendo .hoja{display:block;background:#fff;color:#222;padding:20px;font-family:Georgia,serif}
+body.imprimiendo > *:not(.hoja){display:none !important}
+.hoja h2{font-family:'Grenze Gotisch',serif;font-size:22px;margin:0 0 4px}
+.hoja .cab{font-size:12px;color:#666;margin-bottom:14px}
+.hoja ol{padding-left:22px;font-size:15px;line-height:2.1}
+.hoja .clave{break-before:page;page-break-before:always;margin-top:30px;border-top:1px solid #999;padding-top:10px}
+.hoja .clave ol{line-height:1.7;font-size:13px}
+@media print{ .hoja{display:block} }
+
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;z-index:50;padding:14px}
+.modal .caja{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--linea);border-radius:14px;padding:18px 18px 14px;
+  width:min(520px,100%);max-height:92vh;overflow:auto;box-shadow:0 20px 50px rgba(0,0,0,.6)}
+.modal h2{font-family:'Grenze Gotisch',serif;font-weight:600;font-size:24px;color:var(--acento);margin:0 0 2px;letter-spacing:.3px}
+.modal .sub{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--tenue);margin:0 0 14px}
+.aj{display:grid;grid-template-columns:auto 1fr;gap:10px 14px;align-items:center}
+.aj .etq{min-width:0}
+.aj .ops2{display:flex;flex-wrap:wrap;gap:6px}
+.aj .ops2 button{font-family:'Space Mono',monospace;font-size:11.5px;padding:6px 10px;border-radius:8px;border:1px solid var(--linea);background:var(--fondo);color:var(--tinta);cursor:pointer}
+.aj .ops2 button[aria-pressed="true"]{background:var(--acento);border-color:var(--acento);color:var(--acentoT)}
+.aj .ops2 button:disabled{opacity:.4;cursor:default}
+.nombre{font-family:inherit;font-size:15px;padding:8px 10px;border-radius:9px;border:1px solid var(--linea);background:var(--fondo);color:var(--tinta);width:100%;margin-bottom:10px}
+.albaran{font-family:'Space Mono',monospace;font-size:12px;line-height:1.55;white-space:pre-wrap;background:var(--fondo);border:1px solid var(--linea);
+  border-radius:9px;padding:10px 12px;color:var(--tinta);word-break:break-all}
+.albaran .sello{color:var(--acento)}
+.tourCapa{position:fixed;inset:0;z-index:80;cursor:pointer}
+.tourFoco{position:fixed;border-radius:12px;border:2px solid var(--oro);pointer-events:none;
+  box-shadow:0 0 0 9999px rgba(0,0,0,.66), 0 0 24px var(--oro);transition:all .35s ease}
+.tourGlobo{position:fixed;max-width:320px;background:var(--panel);color:var(--tinta);border:1px solid var(--linea);border-radius:12px;padding:12px 14px;
+  box-shadow:0 12px 30px rgba(0,0,0,.6);cursor:default;transition:top .35s ease,left .35s ease}
+.tourGlobo b{font-family:'Grenze Gotisch',serif;font-size:19px;color:var(--acento);display:block;margin-bottom:4px;font-weight:600}
+.tourGlobo p{margin:0 0 10px;font-size:14px;line-height:1.45}
+.tourGlobo .pie{display:flex;gap:8px;align-items:center;justify-content:space-between}
+.tourGlobo .num{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:1.4px;color:var(--tenue)}
+.tourGlobo button{font-family:'Grenze Gotisch',serif;font-size:16px;padding:5px 12px;border-radius:8px;
+  border:1px solid var(--linea);background:var(--panel);color:var(--tinta);cursor:pointer}
+.tourGlobo button.pri{background:var(--acento);border-color:var(--acento);color:var(--acentoT)}
+
+.boot{position:fixed;inset:0;z-index:9999;background:#16121F;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  transition:opacity .5s ease;cursor:pointer}
+.boot.fuera{opacity:0;pointer-events:none}
+.boot .tit{font-family:'Grenze Gotisch',serif;font-weight:600;font-size:clamp(28px,7vw,42px);color:#A75E9C;letter-spacing:.3px;text-align:center;padding:0 16px}
+.bootEscena{position:relative;width:200px;height:200px}
+.bootEscena svg{width:100%;height:100%;display:block}
+.bootEscena .grano{opacity:0;transform-origin:center;animation:llena .18s ease-out forwards}
+.bootEscena .desborde{opacity:0;transform-origin:100px 100px;animation:desborda .9s ease-out 2.25s forwards}
+@keyframes llena{from{opacity:0;transform:scale(.2)}to{opacity:1;transform:scale(1)}}
+@keyframes desborda{0%{opacity:0;transform:scale(.2)}50%{opacity:.9}100%{opacity:0;transform:scale(2.6)}}
+.boot .lista{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:#B1A48C;display:flex;gap:14px}
+.boot .lista span{opacity:0;animation:pasaLista .3s forwards}
+.boot .saltar{position:absolute;bottom:26px;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:1.6px;text-transform:uppercase;color:#B1A48C;opacity:.8}
+@keyframes pasaLista{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes aparece{from{opacity:0}to{opacity:1}}
+.nueva{animation:aparece .28s ease-out}
+@keyframes tiembla{0%,100%{transform:none}25%{transform:rotate(-6deg)}75%{transform:rotate(6deg)}}
+.tiembla{animation:tiembla .35s ease-in-out 3;transform-origin:center}
+
+footer.pie{margin-top:26px;padding-top:12px;border-top:1px solid var(--linea);display:flex;justify-content:center}
+footer.pie a{display:inline-flex;align-items:center;gap:10px;color:var(--tenue);text-decoration:none;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:1.4px;text-transform:uppercase}
+footer.pie a:hover{color:var(--tinta)}
+footer.pie svg{width:100px;height:22px}
+footer.pie svg circle{fill:none;stroke:currentColor;stroke-width:1.6}
+footer.pie svg text{fill:currentColor;font-family:'Space Mono',monospace;font-size:9px;font-weight:700}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms !important;transition-duration:.001ms !important}
+  .asomo.arriba.mira,.asomo.arriba.mira.falla{transform:translateY(calc(-64% + 2px))}
+  .cruza{animation:none;left:auto;right:12px}
+}
+@media (max-width:520px){ h1{font-size:28px} .encargo{padding-left:64px} }
+
+@media (min-width:900px){
+  body[data-aula="si"]{zoom:1.32;max-width:1430px}
+}
+@media (min-width:1100px){
+  body[data-aula="si"] .aulaRejilla{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.06fr);
+    gap:0 14px;align-items:start}
+  body[data-aula="si"] .colIzq,
+  body[data-aula="si"] .colDer{display:block;min-width:0}
+  body[data-aula="si"] .colIzq > .panel:first-child,
+  body[data-aula="si"] .colDer > .panel:first-child{margin-top:0}
+  body[data-aula="si"] .colIzq > footer.pie{margin-top:18px}
+}
+.aulaRejilla,.colIzq,.colDer{display:contents}
+.barra button.aula[aria-pressed="true"]{color:var(--acento)}
+</style>
+</head><body>
+
+<div class="boot" id="boot" role="status" aria-live="polite">
+  <div class="tit">La corte de Jefarturo</div>
+  <div class="bootEscena" id="bootEscena">
+    <svg viewBox="0 0 200 200" aria-hidden="true" id="bootTablero"></svg>
+  </div>
+  <div class="lista" id="bootLista"></div>
+  <div class="saltar">toca para saltar</div>
+</div>
+
+<header>
+  <div class="almenas" aria-hidden="true"></div>
+  <div class="cabeza">
+    <div>
+      <h1>La corte de Jefarturo</h1>
+      <p class="sub">Potencias y raíces · el castillo</p>
+    </div>
+    <div class="granos" id="granos" aria-label="Granos de trigo"><svg viewBox="0 0 44 28" aria-hidden="true"><ellipse cx="14" cy="16" rx="6" ry="9" fill="currentColor" transform="rotate(-20 14 16)"/><ellipse cx="30" cy="14" rx="6" ry="9" fill="currentColor" transform="rotate(18 30 14)" opacity=".7"/></svg><span>granos</span><b id="granosT">0</b></div>
+  </div>
+  <nav class="barra" id="barra">
+    <a href="https://diazepamina-creator.github.io/linea.html">← Materiales</a>
+    <button id="bGuia">Guía</button>
+    <button id="bTaller" aria-pressed="false">Taller</button>
+    <button id="bIndice" aria-pressed="false">Salas</button>
+    <button id="bGlosario" aria-pressed="false">Glosario</button>
+    <button id="bDeudas" aria-pressed="false">Deudas</button>
+    <span style="flex:1"></span>
+    <button id="bAula" class="aula" aria-pressed="false">Aula</button>
+    <button id="bSello">Carta real</button>
+    <button id="bAjustes">Ajustes</button>
+  </nav>
+  <div class="franja" id="franja">
+    <div class="escudo" id="rangoEscudo" aria-hidden="true"></div>
+    <div class="linea1">
+      <span class="rango"><span id="rangoNom">Copero</span><small id="rangoSig"></small></span>
+      <span class="cuenta" id="rangoCuenta"></span>
+    </div>
+    <div class="barraR"><i id="rangoBarra"></i></div>
+  </div>
+</header>
+
+<div class="panel encargo" id="pEncargo">
+  <div class="asomo lado" id="asomoLado" aria-hidden="true"></div>
+  <div class="globo" id="globoLado" aria-hidden="true"></div>
+  <div class="asomo entero" id="asomoEntero" aria-hidden="true"></div>
+  <div class="cara" id="caraJefarturo"></div>
+  <div class="quien">Jefarturo, rey</div>
+  <p class="encTxt" id="encTxt"></p>
+  <div class="ops" id="ops" hidden></div>
+  <div class="fila">
+    <button class="b" id="atras" aria-label="Encargo anterior">◀</button>
+    <button class="b ok" id="comprobar">Comprobar</button>
+    <span class="paso" id="cual"></span>
+  </div>
+</div>
+<div class="panel informe encargo" id="informe" hidden>
+  <div class="asomo arriba" id="asomoArriba" aria-hidden="true"></div>
+  <div class="barba" id="barba" aria-hidden="true"></div>
+  <div class="cara toca" id="caraListosin" title="Listosín"></div>
+  <div class="quien">Listosín, mago de la corte</div>
+  <p class="encTxt" id="infTxt"></p>
+</div>
+
+<div class="panel taller" id="pTaller" hidden>
+  <div class="salaRot"><b>El taller</b><span>práctica libre, y a la sala si hace falta</span></div>
+  <div class="tipos" id="tipos"></div>
+  <div class="ejer" id="ejer"></div>
+  <div class="fila" style="margin-top:6px" id="filaSiNo" hidden>
+    <button class="b" id="bSi">Sí</button><button class="b" id="bNo">No</button>
+  </div>
+  <div class="fila" style="margin-top:6px" id="filaResp">
+    <input class="resp" id="resp" type="text" inputmode="text" autocomplete="off" placeholder="tu respuesta">
+    <button class="b ok" id="corrige">Corregir</button>
+  </div>
+  <div class="fila" style="margin-top:6px">
+    <button class="b" id="otro">Otro</button>
+    <button class="b" id="verlo" hidden>Verlo en la sala</button>
+  </div>
+  <div class="veredicto" id="verTaller" hidden></div>
+  <div class="marcador"><span>aciertos <b id="tAc">0</b></span><span>racha <b id="tRacha">0</b></span><span>mejor <b id="tMejor">0</b></span></div>
+  <div class="fila">
+    <button class="b" id="hojaDiez">Imprimir una hoja de diez</button>
+    <span class="etq" style="min-width:0">con la clave en hoja aparte</span>
+  </div>
+</div>
+<div class="hoja" id="hoja"></div>
+
+<div class="panel" id="pGlosario" hidden>
+  <div class="salaRot"><b>El glosario</b><span>las palabras de la corte y del tablero</span></div>
+  <div id="glosas"></div>
+</div>
+
+<div class="panel" id="pDeudas" hidden>
+  <div class="salaRot"><b>Las deudas</b><span>lo que se define, lo que se demuestra aquí y lo que se demuestra en otro sitio</span></div>
+  <p class="aviso" style="margin:0 0 10px">Tres cosas de esta corte no son cuentas de segundo. Una es una definición y se dice por qué se
+  elige; otra es un teorema con demostración corta, y está entera para quien la quiera; la tercera es verdad y se demuestra en otro sitio.</p>
+  <details class="deuda">
+    <summary>Por qué a⁰ es uno y a⁻ⁿ es 1/aⁿ</summary>
+    <p>No se calculan: se <b>definen</b>. La única regla que había era «un exponente más es multiplicar otra vez por la base», y
+    hacia atrás dice «un exponente menos es dividir entre la base». Si se sigue hacia atrás desde a¹ = a, sale a⁰ = a ÷ a = 1,
+    y luego a⁻¹ = 1 ÷ a. Se definen así para que la regla no se rompa en el cero. Es la única definición razonable, y por eso
+    parece que se calcula.</p>
+    <p>En el árbol se ve: el nivel cero es el tronco solo, una hoja. El recuento de Jefén Giskan lo dijo para el diez; aquí es
+    para cualquier base, y la razón es la misma.</p>
+  </details>
+  <details class="deuda">
+    <summary>Por qué la raíz de dos no es una fracción</summary>
+    <p>En el aljibe con área dos no cuadra nunca, y no es por falta de decimales. Es un teorema, y de los más viejos. La
+    demostración entera, en ocho líneas, para quien la quiera leer:</p>
+    <p>Supongamos que √2 fuera una fracción p/q, ya simplificada del todo. Entonces p² = 2q². Así que p² es par. Un número
+    impar al cuadrado da impar, así que p es par: p = 2k. Entonces p² = 4k², y 4k² = 2q², así que q² = 2k². Así que q² es par,
+    y q es par. Pero entonces p y q son los dos pares, y la fracción no estaba simplificada. Contradicción: √2 no es ninguna
+    fracción.</p>
+    <p>Lo que la app hace con esto: dejar que el aljibe no cuadre, decir que no es culpa de nadie, y dar el nombre. Los números
+    que no son fracción se llaman irracionales, y éste fue el primero.</p>
+  </details>
+  <details class="deuda">
+    <summary>Por qué doblar gana siempre a sumar</summary>
+    <p>En la gráfica del tesorero se ve: sumando mil por casilla, el doble pasa por delante en la casilla catorce y ya no lo
+    alcanzan. Con un millón, en la veinticinco. Con lo que sea, hay una casilla. Que <b>siempre</b> hay una casilla, para
+    cualquier cantidad que se sume, es verdad y se demuestra por inducción: se comprueba que a partir de cierta casilla el doble
+    crece más que la suma, y que si va por delante en una sigue por delante en la siguiente. La inducción no es de segundo. Se dice que
+    hay demostración y dónde.</p>
+  </details>
+</div>
+
+<div class="panel vetula" id="pSissa" hidden>
+  <div class="salaRot"><b>Sissa</b><span>lo que no está en el índice</span></div>
+  <p class="latin">Un grano en la primera casilla, dos en la segunda, cuatro en la tercera, y así hasta la última.</p>
+  <p class="trad">Lo que pidió Sissa ibn Dahir, según se cuenta, por haber inventado el ajedrez.</p>
+  <p>La leyenda de verdad es india y la trajeron los árabes. Un sabio, <b>Sissa</b>, inventa el juego del ajedrez para un rey que
+  se aburre, y el rey le dice que pida lo que quiera. Sissa pide trigo: un grano en la primera casilla, el doble en la
+  siguiente, y así hasta la sesenta y cuatro. El rey se ríe de lo poco que pide. El tesorero tarda días en hacer la cuenta y
+  vuelve con la cara blanca: no hay trigo en el reino, ni en el mundo, para pagar eso.</p>
+  <p>La cuenta la escribió con todas sus cifras <b>Ibn Jallikán</b>, en árabe, en 1256, en un diccionario de biografías: dos elevado a
+  sesenta y cuatro menos uno, que son <b id="sissaCifras"></b> granos. Este número tiene veinte cifras y se escribe aquí entero,
+  porque abreviarlo sería hacerle trampa al rey.</p>
+  <div class="escena"><svg id="svgSissa" viewBox="0 0 540 260" role="img" aria-label="El trigo del tablero comparado con las cosechas del mundo"></svg></div>
+  <p style="margin-top:10px">A unos cincuenta miligramos el grano, el tablero pesa unas novecientas mil millones de toneladas de
+  trigo. El mundo entero cosecha unas ochocientas millones al año. Harían falta más de mil años de cosechas, sin comer ninguna.
+  Eso es lo que quiere decir «no cabe en el reino».</p>
+  <p class="aviso">Esta sala se ha abierto porque alguien ha tocado la casilla sesenta y cuatro con su trigo, o ha escrito el nombre del sabio. No sale en el índice.</p>
+</div>
+
+<div class="panel" id="pIndice" hidden>
+  <div class="salaRot"><b>Índice</b><span>las salas, sueltas</span></div>
+  <div class="fila"><span class="etq">salas</span><span id="ixSalas"></span></div>
+  <div class="fila">
+    <button class="b" id="ixCerrar">Volver al encargo</button>
+    <button class="b" id="ixTodo">Marcar todo hecho</button>
+    <button class="b" id="ixCero">Empezar de cero</button>
+  </div>
+  <div class="etq" style="margin-top:12px">los encargos</div>
+  <div class="listaEnc" id="ixLista"></div>
+  <div class="fila">
+    <button class="b" id="ixDiag">Autodiagnóstico</button>
+    <span class="etq" style="min-width:0">prueba cada cuenta contra sí misma</span>
+  </div>
+  <div id="diag" hidden></div>
+</div>
+
+<div class="panel" id="pTablero">
+  <div class="fila" style="margin-top:0"><span class="etq">la casilla</span><button class="n" id="tMenos" aria-label="Una casilla menos">−</button><span id="tCasilla"></span><button class="n" id="tMas" aria-label="Una casilla más">+</button></div>
+  <div class="escena"><svg id="svgTablero" viewBox="0 0 540 320" role="img" aria-label="El tablero de sesenta y cuatro casillas, con el trigo de la casilla elegida y sus cifras"></svg></div>
+  <p class="lectura" id="lecTablero"></p>
+</div>
+
+<div class="panel" id="pArbol" hidden>
+  <div class="fila" style="margin-top:0"><span class="etq">ramas</span><span id="aRamas"></span></div>
+  <div class="fila"><span class="etq">niveles</span><span id="aNiveles"></span></div>
+  <div class="fila"><span class="etq">apilar otro</span><span id="aMas"></span></div>
+  <div class="fila"><span class="etq">el mismo, veces</span><span id="aVeces"></span></div>
+  <div class="escena"><svg id="svgArbol" viewBox="0 0 540 320" role="img" aria-label="El árbol del reino con sus ramas y niveles, y el árbol apilado encima"></svg></div>
+  <p class="lectura" id="lecArbol"></p>
+</div>
+
+<div class="panel" id="pPatio" hidden>
+  <div class="fila" style="margin-top:0"><span class="etq">losas</span><button class="n" id="pMenos" aria-label="Una losa menos">−</button><span id="pLosas"></span><button class="n" id="pMas" aria-label="Una losa más">+</button></div>
+  <div class="escena"><svg id="svgPatio" viewBox="0 0 540 300" role="img" aria-label="El patio cuadrado más grande que sale con las losas, y las que sobran"></svg></div>
+  <p class="lectura" id="lecPatio"></p>
+</div>
+
+<div class="panel" id="pAljibe" hidden>
+  <div class="fila" style="margin-top:0"><span class="etq">el área</span><span id="jArea"></span></div>
+  <div class="fila"><span class="etq">el lado</span><span id="jLado"></span></div>
+  <div class="fila"><span class="etq">afinar</span><span id="jCifras"></span></div>
+  <div class="escena"><svg id="svgAljibe" viewBox="0 0 540 300" role="img" aria-label="El aljibe que se quiere y el cuadrado que se prueba, con lo que sobra o falta"></svg></div>
+  <p class="lectura" id="lecAljibe"></p>
+</div>
+
+<div class="panel" id="pTesorero" hidden>
+  <div class="fila" style="margin-top:0"><span class="etq">suma por casilla</span><span id="eSuma"></span></div>
+  <div class="fila"><span class="etq">hasta la casilla</span><span id="eHasta"></span></div>
+  <div class="escena"><svg id="svgTesorero" viewBox="0 0 540 320" role="img" aria-label="Las dos cuentas, sumar y doblar, casilla a casilla, y dónde se cruzan"></svg></div>
+  <p class="lectura" id="lecTesorero"></p>
+</div>
+
+<div class="modal" id="mAjustes" hidden>
+  <div class="caja" role="dialog" aria-modal="true" aria-labelledby="ajTit">
+    <h2 id="ajTit">Ajustes</h2>
+    <p class="sub">Para el aula y para cada aparato</p>
+    <div class="aj" id="aj"></div>
+    <div class="fila" style="margin-top:14px">
+      <button class="b" id="ajCerrar">Cerrar</button>
+      <span class="etq" style="min-width:0">se guardan en este aparato</span>
+    </div>
+  </div>
+</div>
+<div class="modal" id="mSello" hidden>
+  <div class="caja" role="dialog" aria-modal="true" aria-labelledby="selloTit">
+    <h2 id="selloTit">La carta real</h2>
+    <p class="sub">Lo hecho en esta sesión, para copiar y pegar donde haga falta</p>
+    <input class="nombre" id="selloNombre" placeholder="Nombre del copero" autocomplete="off" aria-label="Nombre">
+    <div class="albaran" id="selloTexto"></div>
+    <div class="fila" style="margin-top:12px">
+      <button class="b ok" id="selloCopiar">Copiar</button>
+      <button class="b" id="selloCerrar">Cerrar</button>
+      <span class="etq" id="selloAviso" style="min-width:0"></span>
+    </div>
+  </div>
+</div>
+<div class="tourCapa" id="tourCapa" hidden>
+  <div class="tourFoco" id="tourFoco"></div>
+  <div class="tourGlobo" id="tourGlobo" role="dialog" aria-modal="true">
+    <b id="tourTit"></b><p id="tourTxt"></p>
+    <div class="pie"><span class="num" id="tourNum"></span>
+      <span><button id="tourSalir">Salir</button> <button class="pri" id="tourSig">Siguiente</button></span></div>
+  </div>
+</div>
+
+<footer class="pie">
+  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license" aria-label="Licencia Creative Commons Reconocimiento-NoComercial-SinObraDerivada 4.0">
+    <svg viewBox="0 0 100 22" aria-hidden="true">
+      <circle cx="11" cy="11" r="10"/><text x="11" y="14.5" text-anchor="middle">CC</text>
+      <circle cx="37" cy="11" r="10"/><text x="37" y="14.5" text-anchor="middle">BY</text>
+      <circle cx="63" cy="11" r="10"/><text x="63" y="14.5" text-anchor="middle">NC</text>
+      <circle cx="89" cy="11" r="10"/><text x="89" y="14.5" text-anchor="middle">ND</text>
+    </svg>
+    <span>© 2026 Andrés Asensio · CC BY-NC-ND 4.0</span>
+  </a>
+</footer>
+
+<script>
+const $ = id => document.getElementById(id);
+const NS = 'http://www.w3.org/2000/svg';
+const redondo = (x, n = 2) => Math.round(x * 10**n) / 10**n;
+function cifra(x, n = 2){
+  const v = redondo(x, n); const [ent, dec] = String(v).split('.');
+  return ent.replace(/\B(?=(\d{3})+$)/g, '.') + (dec ? ',' + dec : '');
+}
+const cifraBig = b => b.toString().replace(/\B(?=(\d{3})+$)/g, '.');
+const pot2 = k => 2n ** BigInt(k);
+const SUP = {'0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹','-':'⁻'};
+const sup = n => String(n).split('').map(c => SUP[c] || c).join('');
+const pot = (b, n) => b + sup(n);
+const al = (a, b) => a + Math.floor(Math.random() * (b - a + 1));
+const elige = arr => arr[al(0, arr.length - 1)];
+const el = (g, t, at, txt) => { const e = document.createElementNS(NS, t); for(const q in at) e.setAttribute(q, at[q]); if(txt !== undefined) e.textContent = txt; g.appendChild(e); return e; };
+const txt = (g, x, y, t, at = {}) => el(g, 'text', Object.assign({x, y, fill:'var(--tenue)', 'font-family':"'Space Mono',monospace", 'font-size':12.5}, at), t);
+const gotica = (g, x, y, t, at = {}) => txt(g, x, y, t, Object.assign({'font-family':"'Grenze Gotisch',serif", 'font-size':17, fill:'var(--acento)'}, at));
+
+const CARA_JEFARTURO = `<svg viewBox="0 0 46 48" aria-hidden="true">
+  <path d="M5 46 Q6 33 17 30 L29 30 Q40 33 41 46 Z" fill="#B0392C" stroke="#241C36" stroke-width="1.3"/>
+  <path d="M17 30 Q23 36 29 30 L31 31 Q23 39 15 31 Z" fill="#EFE7D6" stroke="#241C36" stroke-width="1.2" stroke-linejoin="round"/>
+  <g fill="#241C36"><circle cx="18" cy="34.4" r=".9"/><circle cx="23" cy="36" r=".9"/><circle cx="28" cy="34.4" r=".9"/></g>
+  <circle cx="23" cy="18" r="9.4" fill="#7FA35C" stroke="#241C36" stroke-width="1.3"/>
+  <path d="M18.6 18.4 L8.4 18.4 Q5 18.4 5 21.8 Q5 25.2 8.4 25.2 L18.6 25.2 Z" fill="#7FA35C" stroke="#241C36" stroke-width="1.3" stroke-linejoin="round"/>
+  <rect x="15" y="18.8" width="4.4" height="6" fill="#7FA35C"/>
+  <circle cx="7.6" cy="20.8" r=".8" fill="#241C36"/>
+  <path d="M6.8 23.9 H15.6" stroke="#241C36" stroke-width="1" stroke-linecap="round"/>
+  <path d="M27 14 L30.6 9.6 L29 15.6" fill="none" stroke="#5B6B3D" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="19.6" cy="17" r="3.6" fill="#f2f6fb" stroke="#241C36" stroke-width="1.3"/>
+  <circle cx="27.4" cy="16.6" r="3.6" fill="#f2f6fb" stroke="#241C36" stroke-width="1.3"/>
+  <path d="M23.2 16.9 H23.8" stroke="#241C36" stroke-width="1.3"/>
+  <circle cx="19.9" cy="17.2" r="1.4" fill="#140F1F"/><circle cx="27.7" cy="16.8" r="1.4" fill="#140F1F"/>
+  <path d="M13.6 10 L16 4.6 L19.4 8.4 L23 3.4 L26.6 8.4 L30 4.6 L32.4 10 Z"
+        fill="#E0B24A" stroke="#241C36" stroke-width="1.3" stroke-linejoin="round"/>
+  <rect x="13.2" y="9.4" width="19.6" height="3.4" rx="1.4" fill="#E0B24A" stroke="#241C36" stroke-width="1.2"/>
+  <circle cx="23" cy="11.1" r="1.2" fill="#B0392C"/>
+  <path d="M37.5 46 L37.5 20" stroke="#241C36" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M37.5 45 L37.5 21" stroke="#E0B24A" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="37.5" cy="17.6" r="3.4" fill="#E0B24A" stroke="#241C36" stroke-width="1.3"/>
+</svg>`;
+const CARA_LISTOSIN = `<svg viewBox="0 0 46 48" aria-hidden="true">
+  <path d="M7 46 Q8 34 18 31 L28 31 Q38 34 39 46 Z" fill="#5FA0BE" stroke="#241C36" stroke-width="1.3"/>
+  <path d="M7 46 Q8 34 18 31 L20 31 Q15 37 15 46 Z" fill="#2F6E8C" opacity=".75"/>
+  <circle cx="23" cy="21" r="9" fill="#5FA0BE" stroke="#241C36" stroke-width="1.3"/>
+  <path d="M23 12 a9 9 0 0 0 0 18 a6 9 0 0 1 0 -18 z" fill="#7FC9E2" opacity=".5"/>
+  <path d="M28.4 20.2 L35.6 22.6 L28.4 25 Z" fill="#E0B24A" stroke="#241C36" stroke-width="1.1" stroke-linejoin="round"/>
+  <circle cx="25.4" cy="20" r="2.1" fill="#f2f6fb"/><circle cx="20.6" cy="20" r="1.9" fill="#f2f6fb"/>
+  <circle cx="25.7" cy="20.2" r=".95" fill="#140F1F"/><circle cx="20.9" cy="20.2" r=".85" fill="#140F1F"/>
+  <rect x="23.6" y="17.2" width="4" height="1.4" rx=".7" fill="#241C36" transform="rotate(-12 25.6 17.9)"/>
+  <rect x="18.2" y="17.3" width="4" height="1.4" rx=".7" fill="#241C36" transform="rotate(12 20.2 18)"/>
+  <path d="M18 26.5 Q23 25.5 28 26.5 Q28 34 23 37 Q18 34 18 26.5 Z"
+        fill="#EFE7D6" stroke="#241C36" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M21 29 Q23 31 25 29" stroke="#C9BDA6" stroke-width="1" fill="none"/>
+  <g transform="translate(3.4 0)">
+  <path d="M11.6 13.4 Q19 -3 30 2.6 Q26 9 26.6 13.4 Z" fill="#B0392C" stroke="#241C36" stroke-width="1.3" stroke-linejoin="round"/>
+  <rect x="10.4" y="12.4" width="18" height="3.6" rx="1.6" fill="#B0392C" stroke="#241C36" stroke-width="1.2"/>
+  <g fill="#E0B24A">
+    <path d="M20 6 L21 8.2 L23.2 8.6 L21.4 10 L21.9 12.2 L20 11 L18.1 12.2 L18.6 10 L16.8 8.6 L19 8.2 Z"/>
+    <circle cx="24.6" cy="4.6" r="1.1"/><circle cx="16.4" cy="12.2" r=".9"/>
+  </g>
+  </g>
+  <path d="M40 46 L36.6 16" stroke="#241C36" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M39.8 45 L36.8 17" stroke="#8A5E3B" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="36.3" cy="13.4" r="3.2" fill="#9FD0E6" stroke="#241C36" stroke-width="1.3"/>
+  <circle cx="35.4" cy="12.4" r="1" fill="#fff" opacity=".9"/>
+</svg>`;
+const CARA_CACHALOTE = `<svg viewBox="0 0 46 48" aria-hidden="true">
+  <path d="M3 46 Q3 33 14 29.5 L32 29.5 Q43 33 43 46 Z" fill="#C6CBD1" stroke="#241C36" stroke-width="1.3"/>
+  <path d="M3 46 Q3 33 14 29.5 L17 29.5 Q9 35 9 46 Z" fill="#E4E8EC" opacity=".75"/>
+  <path d="M15 33 L31 33 L31 46 L15 46 Z" fill="#3F5866" stroke="#241C36" stroke-width="1.2" stroke-linejoin="round"/>
+  <g stroke="#9FD0E6" stroke-width="1.5" fill="none" stroke-linecap="round">
+    <path d="M17.4 37 Q20 35.4 23 37 Q26 38.6 28.6 37"/>
+    <path d="M17.4 41.4 Q20 39.8 23 41.4 Q26 43 28.6 41.4"/>
+  </g>
+  <ellipse cx="8.6" cy="33.4" rx="6" ry="4.6" fill="#9AA2AC" stroke="#241C36" stroke-width="1.3"/>
+  <ellipse cx="37.4" cy="33.4" rx="6" ry="4.6" fill="#9AA2AC" stroke="#241C36" stroke-width="1.3"/>
+  <circle cx="8.6" cy="33.4" r="1.5" fill="#E0B24A"/><circle cx="37.4" cy="33.4" r="1.5" fill="#E0B24A"/>
+  <path d="M6 10.5 Q6 6 10.5 6 L31 6 Q35.5 6 35.5 10.5 L35.5 21.5 Q35.5 24.5 31.5 25 L9 25 Q6 24.5 6 21.5 Z"
+        fill="#5B7A8C" stroke="#241C36" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M6 10.5 Q6 6 10.5 6 L14 6 Q10 10 10 25 L9 25 Q6 24.5 6 21.5 Z" fill="#7396A8" opacity=".75"/>
+  <path d="M6.6 22.4 Q20 25.6 35 22.4" stroke="#241C36" stroke-width="1.1" fill="none" opacity=".55"/>
+  <path d="M13 24.6 L32 24.6 Q33.6 28.6 30 29.4 L15.4 29.4 Q12.2 28.4 13 24.6 Z"
+        fill="#3F5866" stroke="#241C36" stroke-width="1.3" stroke-linejoin="round"/>
+  <g fill="#EFE7D6" stroke="#241C36" stroke-width=".8">
+    <path d="M16 24.8 L17.2 28.2 L18.4 24.8 Z"/><path d="M20.4 24.8 L21.6 28.4 L22.8 24.8 Z"/>
+    <path d="M24.8 24.8 L26 28.4 L27.2 24.8 Z"/><path d="M29 24.8 L30 27.8 L31 24.8 Z"/>
+  </g>
+  <circle cx="10.4" cy="19.4" r="2.4" fill="#f2f6fb" stroke="#241C36" stroke-width="1"/>
+  <circle cx="10.8" cy="19.6" r="1.2" fill="#140F1F"/>
+  <circle cx="10" cy="18.8" r=".5" fill="#fff"/>
+  <ellipse cx="11.5" cy="7.4" rx="1.6" ry="1" fill="#241C36" opacity=".7"/>
+  <path d="M11.5 6.2 Q10.4 2.6 12.6 .8" stroke="#9FD0E6" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M11.5 6.2 Q14.4 3.6 17 3.4" stroke="#9FD0E6" stroke-width="1.4" fill="none" stroke-linecap="round" opacity=".6"/>
+  <path d="M19 6.2 Q24.4 1.6 29.8 5.2 L29.8 8.6 Q24.4 5 19 9 Z"
+        fill="#E4E8EC" stroke="#241C36" stroke-width="1.3" stroke-linejoin="round"/>
+  <path d="M19.2 7.2 Q24.4 4 29.6 6.8" stroke="#241C36" stroke-width="1.2" fill="none"/>
+  <path d="M24.4 1.8 L24.4 0" stroke="#241C36" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M24.4 .4 Q28.4 -.6 29.8 1.8 Q26.8 2.2 24.4 2.8 Z" fill="#B0392C" stroke="#241C36" stroke-width="1" stroke-linejoin="round"/>
+  <path d="M37.6 31 Q42.4 27.6 41.2 22.4" fill="none" stroke="#241C36" stroke-width="5.2" stroke-linecap="round"/>
+  <path d="M37.6 31 Q42.4 27.6 41.2 22.4" fill="none" stroke="#5B7A8C" stroke-width="3.6" stroke-linecap="round"/>
+  <path d="M41.6 24 Q45.4 21.4 44.4 17.4 Q41.4 19.4 40.2 22.8 Z" fill="#5B7A8C" stroke="#241C36" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M42.4 46 L40 13" stroke="#241C36" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M42.2 45 L40.2 14" stroke="#8A5E3B" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M40 13 L37.6 7.6 L42.6 8.2 Z" fill="#E4E8EC" stroke="#241C36" stroke-width="1.2" stroke-linejoin="round"/>
+</svg>`;
+const CARA_PERCEBAL = `<svg viewBox="0 0 46 48" aria-hidden="true">
+  <ellipse cx="23" cy="45.4" rx="15" ry="2" fill="#140F1F" opacity=".45"/>
+  <path d="M6 44 Q23 36 40 44 L40 46 H6 Z" fill="#9AA2AC" stroke="#241C36" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M9 43.4 Q23 38.6 37 43.4" fill="none" stroke="#C6CBD1" stroke-width="1"/>
+  <path d="M17 40 Q14 30 17 22 L29 22 Q32 30 29 40 Z" fill="#4A3838" stroke="#241C36" stroke-width="1.4" stroke-linejoin="round"/>
+  <g stroke="#241C36" stroke-width=".9" fill="none" opacity=".6"><path d="M16.2 27 Q23 29 29.8 27"/><path d="M15.8 31 Q23 33 30.2 31"/><path d="M16 35 Q23 37 30 35"/></g>
+  <path d="M12 22 Q12 6 23 5 Q34 6 34 22 Z" fill="#E4E8EC" stroke="#241C36" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M23 5 V22" stroke="#9AA2AC" stroke-width="1.2"/>
+  <path d="M15.6 9.6 Q14 15 14.4 22 M30.4 9.6 Q32 15 31.6 22" stroke="#9AA2AC" stroke-width="1" fill="none"/>
+  <path d="M12 22 H34" stroke="#241C36" stroke-width="1.4"/>
+  <g fill="none" stroke="#C08A5E" stroke-width="1.5" stroke-linecap="round">
+    <path d="M22 5.4 Q19 1.6 15 2.4"/><path d="M23 5 Q23 .6 26.4 1"/><path d="M24 5.4 Q27.4 1.8 31 3"/>
+  </g>
+  <circle cx="19.4" cy="14.4" r="3.2" fill="#f2f6fb" stroke="#241C36" stroke-width="1.2"/>
+  <circle cx="26.6" cy="14.4" r="3.2" fill="#f2f6fb" stroke="#241C36" stroke-width="1.2"/>
+  <circle cx="19.9" cy="14.6" r="1.5" fill="#140F1F"/><circle cx="27.1" cy="14.6" r="1.5" fill="#140F1F"/>
+  <path d="M19 19.2 Q23 21.4 27 19.2" fill="none" stroke="#241C36" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M33 16 Q41 14 42 22" fill="none" stroke="#C08A5E" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M38 12 L44 28" stroke="#E0B24A" stroke-width="2.2" stroke-linecap="round"/>
+  <g stroke="#241C36" stroke-width=".9"><path d="M38.6 15.4 l2.4 -.9"/><path d="M39.8 18.6 l2.4 -.9"/><path d="M41 21.8 l2.4 -.9"/></g>
+  <path d="M28 6 Q31 2 34.6 3.6 Q31.6 5.4 29.4 8.2 Z" fill="#B0392C" stroke="#241C36" stroke-width="1" stroke-linejoin="round"/>
+</svg>`;
+$('caraJefarturo').innerHTML = CARA_JEFARTURO;
+$('caraListosin').innerHTML = CARA_LISTOSIN;
+
+const Ruido = (() => {
+  let ctx = null;
+  const ac = () => { try{ if(!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)(); return ctx; }catch(e){ return null; } };
+  const on = () => AJ.sonido === 'si';
+  const tono = (f, dur, vol = .08, tipo = 'sine', t0 = 0, f2) => {
+    const c = ac(); if(!c || !on()) return;
+    const o = c.createOscillator(), g = c.createGain();
+    o.type = tipo; o.frequency.setValueAtTime(f, c.currentTime + t0);
+    if(f2) o.frequency.exponentialRampToValueAtTime(f2, c.currentTime + t0 + dur);
+    g.gain.setValueAtTime(0, c.currentTime + t0);
+    g.gain.linearRampToValueAtTime(vol, c.currentTime + t0 + .01);
+    g.gain.exponentialRampToValueAtTime(.0001, c.currentTime + t0 + dur);
+    o.connect(g); g.connect(c.destination); o.start(c.currentTime + t0); o.stop(c.currentTime + t0 + dur + .02);
+  };
+  return {
+    despierta(){ const c = ac(); if(c && c.state === 'suspended') c.resume(); },
+    grano(k = 1){ for(let i = 0; i < Math.min(k, 8); i++) tono(1800 + Math.random() * 900, .04, .05, 'triangle', i * .05); },
+    moneda(){ tono(2200, .08, .05, 'triangle'); tono(3300, .12, .04, 'triangle', .05); },
+    campana(){ tono(880, .9, .07, 'sine'); tono(1760, .5, .03, 'sine'); tono(2640, .3, .015, 'sine'); },
+    magia(){ [523, 659, 784, 1047, 1319].forEach((f, i) => tono(f, .22, .05, 'triangle', i * .07)); tono(2093, .5, .03, 'sine', .35, 4186); },
+    bien(){ tono(523, .14, .07, 'triangle'); tono(784, .22, .06, 'triangle', .1); },
+    mal(){ tono(150, .22, .1, 'square'); },
+    asciende(){ this.campana(); this.magia(); }
+  };
+})();
+
+const AJ = {vista:'normal', tema:'sable', texto:'normal', fuente:'legible', movimiento:'normal', sonido:'si', lang:'es'};
+const AJ_OPS = {
+  vista:     {etq:'vista',       ops:[['normal','normal'], ['aula','aula · pizarra']]},
+  tema:      {etq:'campo',       ops:[['sable','de sable'], ['pergamino','de pergamino · proyector']]},
+  texto:     {etq:'texto',       ops:[['normal','normal'], ['grande','grande']]},
+  fuente:    {etq:'tipografía',  ops:[['legible','legible'], ['inscripcion','gótica']]},
+  movimiento:{etq:'movimiento',  ops:[['normal','normal'], ['menos','menos']]},
+  sonido:    {etq:'sonido',      ops:[['si','sí'], ['no','no']]},
+  lang:      {etq:'idioma',      ops:[['es','castellano'], ['va','valencià · pronto']]}
+};
+function aplicaAjustes(){
+  const r = document.documentElement;
+  document.body.dataset.aula = AJ.vista === 'aula' ? 'si' : 'no';
+  if(window.pintaAula) pintaAula();
+  r.dataset.tema = AJ.tema; r.dataset.texto = AJ.texto; r.dataset.fuente = AJ.fuente; r.dataset.movimiento = AJ.movimiento;
+  document.querySelectorAll('#aj button').forEach(b => b.setAttribute('aria-pressed', String(AJ[b.dataset.k] === b.dataset.v)));
+}
+function pintaAjustes(){
+  const c = $('aj'); c.innerHTML = '';
+  Object.entries(AJ_OPS).forEach(([k, o]) => {
+    const e = document.createElement('span'); e.className = 'etq'; e.textContent = o.etq; c.appendChild(e);
+    const w = document.createElement('div'); w.className = 'ops2';
+    o.ops.forEach(([v, t]) => {
+      const b = document.createElement('button'); b.textContent = t; b.dataset.k = k; b.dataset.v = v;
+      if(k === 'lang' && v === 'va') b.disabled = true;
+      b.addEventListener('click', () => { AJ[k] = v; aplicaAjustes(); Ruido.despierta(); guardaTurno(); });
+      w.appendChild(b);
+    });
+    c.appendChild(w);
+  });
+  aplicaAjustes();
+}
+function tira(donde, valores, lee, pon, rotula = v => typeof v === 'number' ? cifra(v, 2) : v, clase = 'n'){
+  const c = $(donde); c.innerHTML = '';
+  valores.forEach(v => {
+    const b = document.createElement('button'); b.className = clase; b.textContent = rotula(v);
+    b.setAttribute('aria-pressed', String(lee() === v));
+    b.addEventListener('click', () => pon(v));
+    c.appendChild(b);
+  });
+}
+
+const ESMALTE = {gules:'var(--gules)', azur:'var(--azur)', sinople:'var(--sinople)', purpura:'var(--purpura)', plata:'var(--plata)', oro:'var(--oro)'};
+function escudo(g, x, y, w, campo, figura, extra = {}){
+  const h = w * 1.15, s = w / 40;
+  const gg = el(g, 'g', Object.assign({transform:'translate(' + x + ' ' + y + ') scale(' + s + ')'}, extra));
+  const forma = 'M3 3 H37 V24 Q37 40 20 44 Q3 40 3 24 Z';
+  el(gg, 'path', {d:forma, fill:ESMALTE[campo] || campo, stroke:'var(--hueco)', 'stroke-width':2, 'stroke-linejoin':'round'});
+  const metal = campo === 'gules' || campo === 'purpura' || campo === 'sinople' ? 'var(--oro)' : 'var(--pergamino)';
+  if(figura === 'banda') el(gg, 'path', {d:'M3 3 L37 24 V32 L3 11 Z', fill:metal});
+  else if(figura === 'cruz') el(gg, 'path', {d:'M16 3 H24 V17 H37 V25 H24 V44 Q20 45 16 44 V25 H3 V17 H16 Z', fill:metal});
+  else if(figura === 'estrella') el(gg, 'path', {d:'M20 8 L23.5 18 H34 L25.5 24.5 L29 35 L20 28.5 L11 35 L14.5 24.5 L6 18 H16.5 Z', fill:metal});
+  else if(figura === 'ondas'){ const o = el(gg, 'g', {fill:'none', stroke:metal, 'stroke-width':3, 'stroke-linecap':'round'});
+    el(o, 'path', {d:'M7 16 Q13 11 20 16 Q27 21 33 16'}); el(o, 'path', {d:'M7 26 Q13 21 20 26 Q27 31 33 26'}); el(o, 'path', {d:'M9 35 Q14 30 20 35 Q26 40 31 35'}); }
+  else if(figura === 'corona') el(gg, 'path', {d:'M8 30 L8 16 L14 22 L20 12 L26 22 L32 16 L32 30 Z', fill:metal});
+  else if(figura === 'copa') el(gg, 'path', {d:'M12 10 H28 L26 22 Q20 26 14 22 Z M18 26 H22 V32 H18 Z M13 32 H27 V35 H13 Z', fill:metal});
+  else if(figura === 'llave') el(gg, 'path', {d:'M20 8 a6 6 0 1 0 0 12 a6 6 0 1 0 0 -12 Z M18 20 H22 V36 H26 V33 H22 V30 H25 V27 H22 V20 Z', fill:metal, 'fill-rule':'evenodd'});
+  else if(figura === 'pluma') el(gg, 'path', {d:'M28 8 Q14 14 12 34 L15 35 Q19 20 30 10 Z M14 30 L11 37 L13 38 Z', fill:metal});
+  else if(figura === 'estrellas'){ [[13, 16], [27, 16], [20, 30]].forEach(([cx, cy]) => el(gg, 'path', {d:'M' + cx + ' ' + (cy - 6) + ' l1.8 4.2 4.6 .4 -3.5 3 1.1 4.5 -4 -2.4 -4 2.4 1.1 -4.5 -3.5 -3 4.6 -.4 Z', fill:metal})); }
+  if(extra.borde) el(gg, 'path', {d:forma, fill:'none', stroke:extra.borde, 'stroke-width':3.2, 'stroke-linejoin':'round'});
+  return {gg, h};
+}
+
+const tablero = {casilla:1};
+const granosEn = k => k >= 1 ? pot2(k - 1) : null;
+const totalHasta = k => k >= 1 ? pot2(k) - 1n : 0n;
+const fraccionGrano = k => ({0:'medio grano', '-1':'un cuarto de grano', '-2':'un octavo de grano', '-3':'un dieciseisavo de grano'})[String(k)];
+const TONELADAS = k => Number(granosEn(k)) * 5e-8;
+function pesoDicho(k){
+  const t = TONELADAS(k);
+  if(t * 1e6 < 1) return cifra(t * 1e9, 0) + ' miligramos';
+  if(t < .001) return cifra(t * 1e6, 1) + ' gramos';
+  if(t < 1) return cifra(t * 1000, 1) + ' kilos';
+  if(t < 1e6) return cifra(t, 0) + ' toneladas';
+  if(t < 8e8) return cifra(t / 1e6, 1) + ' millones de toneladas';
+  return cifra(t / 8e8, 0) + ' cosechas del mundo entero';
+}
+function partesCifra(s, porLinea = 4){
+  const t = s.split('.'), lineas = [];
+  for(let i = 0; i < t.length; i += porLinea) lineas.push(t.slice(i, i + porLinea).join('.') + (i + porLinea < t.length ? '.' : ''));
+  return lineas;
+}
+function pintaTablero(){
+  const g = $('svgTablero'); g.innerHTML = '';
+  const k = tablero.casilla, x0 = 16, y0 = 40, c = 26;
+  gotica(g, 12, 24, k >= 1 ? 'casilla ' + k + ' · ' + (k - 1) + (k === 2 ? ' vez doblado' : ' veces doblado') : 'antes de la primera casilla · ' + fraccionGrano(k));
+  for(let f = 0; f < 8; f++) for(let col = 0; col < 8; col++){
+    const n = f * 8 + col + 1, claro = (f + col) % 2 === 0, hecha = n <= k;
+    const r = el(g, 'rect', {x:x0 + col * c, y:y0 + f * c, width:c, height:c, fill:claro ? 'var(--panel2)' : 'var(--acento)', 'fill-opacity':claro ? 1 : .5, stroke:'var(--linea)', 'stroke-width':.6, style:'cursor:pointer', class:'casilla', 'data-n':n});
+    if(hecha) el(g, 'rect', {x:x0 + col * c + 2, y:y0 + f * c + 2, width:c - 4, height:c - 4, fill:'var(--oro)', 'fill-opacity':.15 + .75 * (n / 64), rx:2, style:'pointer-events:none'});
+    if(n === k) el(g, 'rect', {x:x0 + col * c + 1, y:y0 + f * c + 1, width:c - 2, height:c - 2, fill:'none', stroke:'var(--oro)', 'stroke-width':2.4, class:'nueva', style:'pointer-events:none'});
+    if(n === 1 || n === 8 || n === 64 || n === k) txt(g, x0 + col * c + c / 2, y0 + f * c + c / 2 + 4, n, {'text-anchor':'middle', 'font-size':9.5, fill:n === k ? 'var(--tinta)' : 'var(--tenue)', style:'pointer-events:none'});
+  }
+  g.querySelectorAll('.casilla').forEach(r => r.addEventListener('click', () => { const n = +r.getAttribute('data-n'); if(n === 64 && tablero.casilla === 64){ abreSissa('la casilla sesenta y cuatro'); return; } tablero.casilla = n; Ruido.grano(3); pintaTablero2(); }));
+  txt(g, x0 + 4 * c, y0 + 8 * c + 16, 'toca una casilla', {'text-anchor':'middle', 'font-size':10.5});
+  const mx = 272, my = 250;
+  if(k >= 1){
+    const alto = 8 + (k - 1) * 1.45, ancho = 14 + (k - 1) * .32;
+    el(g, 'path', {d:`M${mx - ancho} ${my} Q${mx} ${my - alto * 2} ${mx + ancho} ${my} Z`, fill:'var(--oro)', 'fill-opacity':.85, stroke:'var(--acentoO)', 'stroke-width':1, class:'nueva', style:'pointer-events:none'});
+    for(let i = 0; i < Math.min(k, 12); i++) el(g, 'ellipse', {cx:mx - ancho * .6 + (i * 37 % 100) / 100 * ancho * 1.2, cy:my - 3 - (i * 53 % 100) / 100 * alto * .9, rx:2.4, ry:3.6, fill:'var(--pergamino)', 'fill-opacity':.6, style:'pointer-events:none', transform:'rotate(' + (i * 40 % 90 - 45) + ' ' + (mx - ancho * .6 + (i * 37 % 100) / 100 * ancho * 1.2) + ' ' + (my - 3 - (i * 53 % 100) / 100 * alto * .9) + ')'});
+  }else{
+    const partes = 2 ** (1 - k), w = 64;
+    for(let i = 0; i < partes; i++) el(g, 'rect', {x:mx - w / 2 + i * (w / partes), y:my - 34, width:w / partes - 1.5, height:34, rx:3, fill:'var(--oro)', 'fill-opacity':i === 0 ? .9 : .18, stroke:'var(--acentoO)', 'stroke-width':.8});
+    txt(g, mx, my + 16, 'un grano partido en ' + partes, {'text-anchor':'middle', 'font-size':10});
+    txt(g, mx, my + 30, 'se queda un trozo', {'text-anchor':'middle', 'font-size':10});
+  }
+  el(g, 'line', {x1:mx - 44, y1:my, x2:mx + 44, y2:my, stroke:'var(--linea)', 'stroke-width':1});
+  const tx = 330;
+  txt(g, tx, 62, 'granos en la casilla', {'font-size':10.5});
+  if(k >= 1){
+    const s = cifraBig(granosEn(k)), grupos = s.split('.').length, lineas = partesCifra(s, grupos <= 5 ? 5 : 4);
+    lineas.forEach((l, i) => gotica(g, tx, 88 + i * 24, l, {'font-family':"'Space Mono',monospace", 'font-size':lineas.length > 1 ? 15 : grupos === 5 ? 17 : 22, fill:'var(--oro)', 'font-weight':700}));
+    let y = 88 + lineas.length * 24 + 6;
+    txt(g, tx, y, pot(2, k - 1) + (k > 1 ? ' · ' + (s.replace(/\./g, '').length) + (s.length > 4 ? ' cifras' : ' cifras') : ''), {'font-size':11.5, fill:'var(--tinta)'}); y += 26;
+    txt(g, tx, y, 'todas hasta aquí', {'font-size':10.5}); y += 18;
+    const t = cifraBig(totalHasta(k)), lt = partesCifra(t, 4);
+    lt.forEach((l, i) => txt(g, tx, y + i * 16, l, {'font-size':12, fill:'var(--tinta)'})); y += lt.length * 16 + 4;
+    txt(g, tx, y, pot(2, k) + ' − 1', {'font-size':11.5, fill:'var(--tinta)'}); y += 26;
+    txt(g, tx, y, 'lo que pesa esta casilla', {'font-size':10.5}); y += 18;
+    txt(g, tx, y, pesoDicho(k), {'font-size':12, fill:k >= 55 ? 'var(--mal)' : 'var(--tinta)'});
+  }else{
+    gotica(g, tx, 88, fraccionGrano(k), {'font-size':20, fill:'var(--oro)'});
+    txt(g, tx, 114, pot(2, k - 1) + ' = 1/' + 2 ** (1 - k), {'font-size':12, fill:'var(--tinta)'});
+    txt(g, tx, 146, 'la regla, hacia atrás:', {'font-size':10.5});
+    txt(g, tx, 164, 'una casilla menos, la mitad', {'font-size':11.5, fill:'var(--tinta)'});
+    txt(g, tx, 182, pot(2, k) + ' ÷ 2 = ' + pot(2, k - 1), {'font-size':11.5, fill:'var(--tinta)'});
+  }
+  txt(g, 528, 312, 'cada casilla, el doble de la anterior', {'text-anchor':'end', 'font-size':10.5});
+}
+function leeTablero(){
+  const k = tablero.casilla;
+  $('lecTablero').innerHTML =
+    '<span class="def">2ⁿ es dos multiplicado por sí mismo n veces: el exponente cuenta las veces. Para que «una casilla más es el doble» valga también hacia atrás, se define 2⁰ = 1 y 2⁻ⁿ = 1/2ⁿ.</span>'
+    + (k >= 1
+      ? 'En la casilla <b>' + k + '</b> hay ' + pot(2, k - 1) + ' granos: uno, doblado <b>' + (k - 1) + '</b> veces' + (k === 1 ? ', o sea sin doblar: un grano' : '') + '. '
+        + (k <= 4 ? 'Se puede contar con los dedos. ' : k <= 11 ? 'Ya son ' + cifraBig(granosEn(k)) + ', y todavía se pueden imaginar. ' : k <= 30 ? 'Son ' + cifraBig(granosEn(k)) + ': ' + pesoDicho(k) + '. Ya nadie los cuenta a mano. ' : k < 55 ? 'Son ' + cifraBig(granosEn(k)) + ', que pesan ' + pesoDicho(k) + '. Solo esta casilla. ' : 'Son ' + cifraBig(granosEn(k)) + ' granos: ' + pesoDicho(k) + '. Solo esta casilla, y quedan ' + (64 - k) + '. ')
+        + 'Todas las casillas hasta aquí suman ' + pot(2, k) + ' − 1: siempre <b>una menos que la siguiente</b>, que es la manera de saberlo sin sumar.'
+        + (k === 11 ? '<span class="murmullo">Listosín, por lo bajo: «para un mago, mil son mil veinticuatro».</span>' : '')
+        + (k === 64 ? '<span class="murmullo">Ésta es la última. Toca la casilla otra vez, si quieres saber quién la pidió.</span>' : '')
+      : 'Antes de la primera casilla no hay tablero, pero la regla sigue valiendo al revés: <b>una casilla menos es la mitad</b>. La casilla 2 tiene dos granos, 2¹. La casilla 1 tiene la mitad, un grano, y por eso 2⁰ es uno. La casilla 0 tiene la mitad de uno, <b>medio grano</b>, y eso es 2⁻¹ = 1/2. ' + (k < 0 ? 'Y así, mitad tras mitad, hasta la casilla ' + k + ': ' + fraccionGrano(k) + ', que es ' + pot(2, k - 1) + ' = 1/' + 2 ** (1 - k) + '. ' : '') + 'No se calcula: <b>se define</b> para que la regla no se rompa.')
+    + '<span class="cuenta">' + (k >= 1 ? 'casilla ' + k + ': ' + pot(2, k - 1) + ' = ' + cifraBig(granosEn(k)) + '   ·   hasta aquí: ' + pot(2, k) + ' − 1 = ' + cifraBig(totalHasta(k)) : 'casilla ' + k + ': ' + pot(2, k - 1) + ' = 1/' + 2 ** (1 - k) + ' = ' + fraccionGrano(k)) + '</span>';
+}
+function mandosTablero(){
+  $('tCasilla').innerHTML = ''; const s = document.createElement('span'); s.className = 'n'; s.style.cssText = 'display:inline-block;padding:5px 12px;font-family:Space Mono,monospace;font-weight:700;font-size:14px;color:var(--oro)';
+  s.textContent = tablero.casilla >= 1 ? tablero.casilla : tablero.casilla; $('tCasilla').appendChild(s);
+  $('tMenos').disabled = tablero.casilla <= -3; $('tMas').disabled = tablero.casilla >= 64;
+}
+function pintaTablero2(){ mandosTablero(); pintaTablero(); leeTablero(); revisa(); if(tablero.casilla === 11) huevo('kilo'); }
+$('tMas').addEventListener('click', () => { if(tablero.casilla < 64){ tablero.casilla++; Ruido.grano(2); pintaTablero2(); } });
+$('tMenos').addEventListener('click', () => { if(tablero.casilla > -3){ tablero.casilla--; Ruido.grano(1); pintaTablero2(); } });
+
+const arbol = {ramas:3, niveles:2, mas:0, veces:1};
+const nivelesArbol = a => a.niveles * a.veces + a.mas;
+const hojas = a => a.ramas ** nivelesArbol(a);
+function pintaArbol(){
+  const g = $('svgArbol'); g.innerHTML = '';
+  const {ramas, niveles, mas, veces} = arbol, N = nivelesArbol(arbol), H = hojas(arbol);
+  gotica(g, 12, 24, pot(ramas, N) + ' = ' + cifra(H, 0) + (H === 1 ? ' hoja' : ' hojas'));
+  const x0 = 20, x1 = 360, yBase = 296, dy = N ? Math.min(42, 208 / N) : 0;
+  const colorDe = nivel => nivel > niveles * veces ? 'var(--acento)' : (Math.floor((nivel - 1) / niveles) % 2 === 1 ? 'var(--oro)' : 'var(--figura)');
+  let nodos = [(x0 + x1) / 2];
+  el(g, 'circle', {cx:nodos[0], cy:yBase, r:5, fill:'var(--figura)'});
+  txt(g, nodos[0] + 10, yBase + 4, 'el tronco · nivel 0 · 1', {'font-size':10.5});
+  for(let nivel = 1; nivel <= N; nivel++){
+    const cuenta = ramas ** nivel, y = yBase - nivel * dy, col = colorDe(nivel);
+    if(cuenta <= 160){
+      const nuevos = [];
+      nodos.forEach((px, i) => { for(let r = 0; r < ramas; r++){ const idx = i * ramas + r; const x = x0 + (idx + .5) / cuenta * (x1 - x0); nuevos.push(x);
+        el(g, 'line', {x1:px, y1:y + dy, x2:x, y2:y, stroke:col, 'stroke-width':Math.max(.6, 3 - nivel * .4), 'stroke-opacity':.85}); } });
+      nuevos.forEach(x => el(g, 'circle', {cx:x, cy:y, r:Math.max(1.2, 4 - nivel * .5), fill:col}));
+      nodos = nuevos;
+    }else{
+      el(g, 'rect', {x:x0, y:y - 6, width:x1 - x0, height:12, rx:6, fill:col, 'fill-opacity':.35});
+      for(let i = 0; i < 40; i++) el(g, 'line', {x1:x0 + (i + .5) / 40 * (x1 - x0), y1:y + dy - 4, x2:x0 + (i + .5) / 40 * (x1 - x0), y2:y + 6, stroke:col, 'stroke-width':.6, 'stroke-opacity':.5});
+      nodos = null;
+    }
+    txt(g, x1 + 8, y + 4, 'nivel ' + nivel + ' · ' + cifra(cuenta, 0), {'font-size':10.5, fill:nivel > niveles * veces ? 'var(--acento)' : 'var(--tenue)'});
+    if(nodos === null && nivel < N){
+      for(let n2 = nivel + 1; n2 <= N; n2++){ const y2 = yBase - n2 * dy; el(g, 'rect', {x:x0, y:y2 - 6, width:x1 - x0, height:12, rx:6, fill:colorDe(n2), 'fill-opacity':.25}); txt(g, x1 + 8, y2 + 4, 'nivel ' + n2 + ' · ' + cifra(ramas ** n2, 0), {'font-size':10.5, fill:n2 > niveles * veces ? 'var(--acento)' : 'var(--tenue)'}); }
+      break;
+    }
+  }
+  const ly = 42;
+  txt(g, 368, ly, 'ramas por nudo: ' + ramas, {'font-size':10.5, fill:'var(--tinta)'});
+  txt(g, 368, ly + 15, 'árbol: ' + niveles + (niveles === 1 ? ' nivel' : ' niveles') + (veces > 1 ? ' × ' + veces + ' veces' : ''), {'font-size':10.5, fill:'var(--tinta)'});
+  if(mas) txt(g, 368, ly + 30, 'apilado encima: ' + mas + (mas === 1 ? ' nivel' : ' niveles'), {'font-size':10.5, fill:'var(--acento)'});
+  txt(g, 528, 312, 'cada nudo, las mismas ramas', {'text-anchor':'end', 'font-size':10.5});
+}
+function leeArbol(){
+  const {ramas, niveles, mas, veces} = arbol, N = nivelesArbol(arbol), H = hojas(arbol);
+  let cuerpo;
+  if(N === 0) cuerpo = 'Con cero niveles no hay ramas: solo el tronco, que es <b>una</b> hoja. ' + pot(ramas, 0) + ' = 1, y no porque se calcule: porque quitar un nivel es dividir entre ' + ramas + ', y de ' + pot(ramas, 1) + ' = ' + ramas + ' hacia atrás sale ' + ramas + ' ÷ ' + ramas + ' = 1. Se define así para que la regla no se rompa.';
+  else{
+    cuerpo = 'Un nudo, ' + ramas + ' ramas; cada rama, ' + ramas + ' más. Con <b>' + niveles + '</b> ' + (niveles === 1 ? 'nivel' : 'niveles') + ' hay ' + pot(ramas, niveles) + ' = ' + cifra(ramas ** niveles, 0) + ' hojas: el exponente cuenta los niveles. ';
+    if(veces > 1) cuerpo += 'El mismo árbol apilado <b>' + veces + ' veces</b> es un árbol de árboles: ' + niveles + ' niveles ' + veces + ' veces son ' + niveles + ' × ' + veces + ' = ' + niveles * veces + ' niveles. Por eso (' + pot(ramas, niveles) + ')' + sup(veces) + ' = ' + pot(ramas, niveles * veces) + ': <b>los exponentes se multiplican</b>. ';
+    if(mas) cuerpo += 'Y encima, apilado, otro árbol de <b>' + mas + '</b> ' + (mas === 1 ? 'nivel' : 'niveles') + ': los niveles se suman, ' + niveles * veces + ' + ' + mas + ' = ' + N + '. Por eso ' + pot(ramas, niveles * veces) + ' · ' + pot(ramas, mas) + ' = ' + pot(ramas, N) + ': <b>los exponentes se suman</b>, porque son niveles y los niveles se cuentan. ';
+    cuerpo += 'En total, ' + pot(ramas, N) + ' = <b>' + cifra(H, 0) + '</b> hojas.';
+  }
+  $('lecArbol').innerHTML =
+    '<span class="def">La base es cuántas ramas salen de cada nudo; el exponente, cuántos niveles. Apilar un árbol sobre otro suma los niveles: aᵐ · aⁿ = aᵐ⁺ⁿ. Un árbol de árboles los multiplica: (aᵐ)ⁿ = aᵐ·ⁿ.</span>'
+    + cuerpo
+    + '<span class="cuenta">' + (veces > 1 ? '(' + pot(ramas, niveles) + ')' + sup(veces) + ' = ' + pot(ramas, niveles * veces) : pot(ramas, niveles)) + (mas ? ' · ' + pot(ramas, mas) + ' = ' + pot(ramas, N) : '') + ' = ' + cifra(H, 0) + '</span>';
+}
+function mandosArbol(){
+  tira('aRamas', [2, 3, 4, 5], () => arbol.ramas, v => { arbol.ramas = v; Ruido.grano(2); pintaArbol2(); }, v => String(v));
+  tira('aNiveles', [0, 1, 2, 3, 4, 5], () => arbol.niveles, v => { arbol.niveles = v; Ruido.grano(2); pintaArbol2(); }, v => String(v));
+  tira('aMas', [0, 1, 2, 3], () => arbol.mas, v => { arbol.mas = v; Ruido.grano(2); pintaArbol2(); }, v => v ? '+' + v : 'nada');
+  tira('aVeces', [1, 2, 3], () => arbol.veces, v => { arbol.veces = v; Ruido.grano(2); pintaArbol2(); }, v => v === 1 ? 'una' : '× ' + v);
+}
+function pintaArbol2(){ mandosArbol(); pintaArbol(); leeArbol(); revisa(); }
+
+const patio = {losas:64};
+const raizEntera = n => Math.floor(Math.sqrt(n));
+function pintaPatio(){
+  const g = $('svgPatio'); g.innerHTML = '';
+  const n = patio.losas, k = raizEntera(n), resto = n - k * k, justo = resto === 0;
+  gotica(g, 12, 24, n + (n === 1 ? ' losa' : ' losas') + ' · ' + (justo ? 'patio de ' + k + ' por ' + k + ', justo' : 'patio de ' + k + ' por ' + k + ' y sobran ' + resto));
+  const lado = 220, c = lado / Math.max(k, 1), x0 = 30, y0 = 50;
+  const esTablero = n === 64;
+  for(let f = 0; f < k; f++) for(let col = 0; col < k; col++)
+    el(g, 'rect', {x:x0 + col * c, y:y0 + f * c, width:c - 1, height:c - 1, rx:Math.min(3, c / 6), fill:esTablero ? ((f + col) % 2 ? 'var(--acento)' : 'var(--pergamino)') : 'var(--figura)', 'fill-opacity':esTablero ? .8 : .55});
+  el(g, 'rect', {x:x0 - 2, y:y0 - 2, width:lado + 3, height:lado + 3, fill:'none', stroke:'var(--oro)', 'stroke-width':1.6});
+  txt(g, x0 + lado / 2, y0 + lado + 18, k + ' × ' + k + ' = ' + k * k, {'text-anchor':'middle', 'font-size':11.5, fill:'var(--tinta)'});
+  txt(g, x0 - 8, y0 + lado / 2 + 4, k, {'text-anchor':'end', 'font-size':12, fill:'var(--oro)'});
+  const sx = 300, sy = 60, sc = 18;
+  if(resto){
+    for(let i = 0; i < resto; i++) el(g, 'rect', {x:sx + (i % 6) * (sc + 3), y:sy + Math.floor(i / 6) * (sc + 3), width:sc, height:sc, rx:3, fill:'var(--mal)', 'fill-opacity':.7, class:'nueva'});
+    txt(g, sx, sy + Math.ceil(resto / 6) * (sc + 3) + 14, 'sobran ' + resto + ': no llegan a otra fila', {'font-size':10.5});
+  }else txt(g, sx, sy + 14, 'no sobra ninguna', {'font-size':10.5, fill:'var(--oro)'});
+  const ty = 150;
+  txt(g, sx, ty, 'la raíz cuadrada de ' + n, {'font-size':10.5});
+  gotica(g, sx, ty + 28, justo ? '√' + n + ' = ' + k : '√' + n + ' está entre ' + k + ' y ' + (k + 1), {'font-size':justo ? 24 : 18, fill:'var(--oro)'});
+  txt(g, sx, ty + 50, justo ? k + '² = ' + n + ': cuadrado perfecto' : k + '² = ' + k * k + ' < ' + n + ' < ' + (k + 1) * (k + 1) + ' = ' + (k + 1) + '²', {'font-size':11.5, fill:'var(--tinta)'});
+  txt(g, sx, ty + 80, 'los cuadrados perfectos hasta cien', {'font-size':10.5});
+  txt(g, sx, ty + 98, '1 4 9 16 25 36 49 64 81 100', {'font-size':11.5, fill:'var(--tinta)'});
+  txt(g, 528, 292, 'un patio cuadrado tiene lado por lado losas', {'text-anchor':'end', 'font-size':10.5});
+}
+function leePatio(){
+  const n = patio.losas, k = raizEntera(n), resto = n - k * k, justo = resto === 0;
+  $('lecPatio').innerHTML =
+    '<span class="def">Un número es un cuadrado perfecto si con esas losas se hace un patio cuadrado sin que sobre ninguna. Su raíz cuadrada es el lado del patio. Si sobran, la raíz está entre dos enteros: el lado que sale y el siguiente.</span>'
+    + (justo ? 'Con <b>' + n + '</b> losas sale un patio de <b>' + k + ' por ' + k + '</b> y no sobra ninguna: ' + n + ' es un cuadrado perfecto y su raíz es ' + k + '. ' + (n === 64 ? 'Ocho por ocho: es el <b>tablero</b>. El patio de armas y el tablero del trigo son el mismo cuadrado.' : n === 1 ? 'Una losa es un patio de uno por uno, y su raíz es uno.' : 'Deshacer el cuadrado es sacar la raíz: ' + k + '² = ' + n + ', √' + n + ' = ' + k + '.')
+      : 'Con <b>' + n + '</b> losas el patio más grande que sale es de <b>' + k + ' por ' + k + '</b>, que gasta ' + k * k + ', y sobran <b>' + resto + '</b>: no llegan para otra fila entera, que necesitaría ' + (2 * k + 1) + '. Así que ' + n + ' no es un cuadrado perfecto, y su raíz no es entera: está <b>entre ' + k + ' y ' + (k + 1) + '</b>. La raíz entera es ' + k + '. Para afinar más, al aljibe.')
+    + '<span class="cuenta">' + k + '² = ' + k * k + (justo ? '   ·   √' + n + ' = ' + k : ' < ' + n + ' < ' + (k + 1) * (k + 1) + ' = ' + (k + 1) + '²   ·   ' + k + ' < √' + n + ' < ' + (k + 1)) + '</span>';
+}
+function mandosPatio(){
+  $('pLosas').innerHTML = ''; const s = document.createElement('span'); s.style.cssText = 'display:inline-block;padding:5px 12px;font-family:Space Mono,monospace;font-weight:700;font-size:14px;color:var(--oro)'; s.textContent = patio.losas; $('pLosas').appendChild(s);
+  $('pMenos').disabled = patio.losas <= 1; $('pMas').disabled = patio.losas >= 100;
+}
+function pintaPatio2(){ mandosPatio(); pintaPatio(); leePatio(); revisa(); if(patio.losas === 64) huevo('patio'); }
+$('pMas').addEventListener('click', () => { if(patio.losas < 100){ patio.losas++; Ruido.grano(1); pintaPatio2(); } });
+$('pMenos').addEventListener('click', () => { if(patio.losas > 1){ patio.losas--; Ruido.grano(1); pintaPatio2(); } });
+{
+  let reloj = null; const repite = f => { f(); reloj = setInterval(f, 110); }; const para = () => clearInterval(reloj);
+  [['pMas', () => { if(patio.losas < 100){ patio.losas++; pintaPatio2(); } }], ['pMenos', () => { if(patio.losas > 1){ patio.losas--; pintaPatio2(); } }],
+   ['tMas', () => { if(tablero.casilla < 64){ tablero.casilla++; pintaTablero2(); } }], ['tMenos', () => { if(tablero.casilla > -3){ tablero.casilla--; pintaTablero2(); } }]].forEach(([id, f]) => {
+    let t = null;
+    $(id).addEventListener('pointerdown', () => { t = setTimeout(() => repite(f), 450); });
+    ['pointerup', 'pointerleave', 'pointercancel'].forEach(ev => $(id).addEventListener(ev, () => { clearTimeout(t); para(); }));
+  });
+}
+
+const aljibe = {area:50, cifras:1, lado:7, intentos:0};
+const candidatos = () => {
+  const b = raizEntera(aljibe.area);
+  if(aljibe.cifras === 1) return Array.from({length:10}, (_, i) => redondo(b + i / 10, 1));
+  let d = b; for(let i = 9; i >= 0; i--){ const v = redondo(b + i / 10, 1); if(v * v <= aljibe.area){ d = v; break; } }
+  return Array.from({length:10}, (_, i) => redondo(d + i / 100, 2));
+};
+function pintaAljibe(){
+  const g = $('svgAljibe'); g.innerHTML = '';
+  const A = aljibe.area, L = aljibe.lado, L2 = redondo(L * L, 4), dif = redondo(L2 - A, 4);
+  gotica(g, 12, 24, 'aljibe de ' + A + ' · se prueba lado ' + cifra(L, aljibe.cifras) + ' · ' + cifra(L, aljibe.cifras) + '² = ' + cifra(L2, 4));
+  const esc = 200 / Math.max(Math.sqrt(A), L) , x0 = 40, y0 = 260;
+  const lq = Math.sqrt(A) * esc, lp = L * esc;
+  el(g, 'rect', {x:x0, y:y0 - lp, width:lp, height:lp, fill:dif > 0 ? 'var(--mal)' : 'var(--acento)', 'fill-opacity':.45, class:'nueva'});
+  el(g, 'rect', {x:x0, y:y0 - lq, width:lq, height:lq, fill:'none', stroke:'var(--oro)', 'stroke-width':2, 'stroke-dasharray':'6 4'});
+  txt(g, x0, Math.min(y0 - lq, y0 - lp) - 8, 'a rayas, el que se quiere: ' + A + ' · lleno, el que se prueba', {'font-size':10.5, fill:'var(--oro)'});
+  txt(g, x0, y0 + 16, 'lado ' + cifra(L, aljibe.cifras), {'font-size':11.5, fill:'var(--tinta)'});
+  txt(g, x0 + 120, y0 + 16, 'área ' + cifra(L2, 4), {'font-size':11.5, fill:'var(--tinta)'});
+  const tx = 330;
+  txt(g, tx, 70, 'lo que se prueba', {'font-size':10.5});
+  gotica(g, tx, 98, cifra(L, aljibe.cifras) + '² = ' + cifra(L2, 4), {'font-size':20, fill:'var(--tinta)'});
+  txt(g, tx, 128, dif === 0 ? 'cuadra justo' : dif > 0 ? 'se pasa en ' + cifra(dif, 4) : 'falta ' + cifra(-dif, 4), {'font-size':12.5, fill:dif === 0 ? 'var(--oro)' : dif > 0 ? 'var(--mal)' : 'var(--sinople)'});
+  const c = candidatos(), bajo = c.filter(v => v * v <= A).pop(), alto = c.find(v => v * v > A);
+  txt(g, tx, 164, 'con ' + (aljibe.cifras === 1 ? 'una cifra' : 'dos cifras') + ', la raíz está entre', {'font-size':10.5});
+  gotica(g, tx, 190, (bajo !== undefined ? cifra(bajo, aljibe.cifras) : '—') + ' y ' + (alto !== undefined ? cifra(alto, aljibe.cifras) : '—'), {'font-size':20, fill:'var(--oro)'});
+  txt(g, tx, 214, bajo !== undefined ? cifra(bajo, aljibe.cifras) + '² = ' + cifra(bajo * bajo, 4) + ' ≤ ' + A : '', {'font-size':11, fill:'var(--tinta)'});
+  txt(g, tx, 230, alto !== undefined ? alto + '² = ' + cifra(alto * alto, 4) + ' > ' + A : '', {'font-size':11, fill:'var(--tinta)'});
+  txt(g, tx, 262, 'la raíz, con más cifras: ' + cifra(Math.sqrt(A), 4) + '…', {'font-size':10.5});
+  txt(g, 528, 292, A === 2 ? 'con dos, no cuadra nunca' : 'afinar es acercarse cuanto se quiera', {'text-anchor':'end', 'font-size':10.5});
+}
+function leeAljibe(){
+  const A = aljibe.area, L = aljibe.lado, L2 = redondo(L * L, 4), dif = redondo(L2 - A, 4);
+  const c = candidatos(), bajo = c.filter(v => v * v <= A).pop(), alto = c.find(v => v * v > A);
+  $('lecAljibe').innerHTML =
+    '<span class="def">Cuando el patio no cuadra, se afina: se prueba un lado con una cifra decimal, se mira si el cuadrado se pasa o se queda corto, y se aprieta entre los dos que lo cercan. Luego con dos cifras. Se acerca cuanto se quiera.</span>'
+    + 'El aljibe tiene que tener <b>' + A + '</b> losas cuadradas. Con lado ' + cifra(L, aljibe.cifras) + ' salen ' + cifra(L2, 4) + ': ' + (dif === 0 ? '<b>cuadra justo</b>, y ' + A + ' es un cuadrado perfecto.' : dif > 0 ? 'se pasa en ' + cifra(dif, 4) + '.' : 'faltan ' + cifra(-dif, 4) + '.')
+    + (dif !== 0 && bajo !== undefined && alto !== undefined ? ' Con ' + (aljibe.cifras === 1 ? 'una cifra' : 'dos cifras') + ', la raíz de ' + A + ' está entre <b>' + cifra(bajo, aljibe.cifras) + '</b> y <b>' + cifra(alto, aljibe.cifras) + '</b>: la primera se queda corta y la segunda se pasa. ' + (aljibe.cifras === 1 ? 'Para apretar más, afina a dos cifras.' : 'Y con tres se apretaría más, y con cuatro más: √' + A + ' = ' + cifra(Math.sqrt(A), 4) + '…') : '')
+    + (A === 2 ? ' Y con dos losas pasa una cosa: <b>no cuadra nunca</b>, con las cifras que sean. No es que falten decimales: es que la raíz de dos no es ninguna fracción. Está demostrado en las deudas, en ocho líneas.' : '')
+    + '<span class="cuenta">' + cifra(L, aljibe.cifras) + '² = ' + cifra(L2, 4) + (dif === 0 ? ' = ' + A : (dif > 0 ? ' > ' : ' < ') + A) + (bajo !== undefined && alto !== undefined && dif !== 0 ? '   ·   ' + cifra(bajo, aljibe.cifras) + ' < √' + A + ' < ' + cifra(alto, aljibe.cifras) : '') + '</span>';
+}
+function mandosAljibe(){
+  tira('jArea', [2, 10, 20, 50, 70, 90], () => aljibe.area, v => { aljibe.area = v; aljibe.cifras = 1; aljibe.lado = raizEntera(v); aljibe.intentos = 0; Ruido.grano(2); pintaAljibe2(); }, v => String(v));
+  tira('jLado', candidatos(), () => aljibe.lado, v => { aljibe.lado = v; aljibe.intentos++; Ruido.moneda(); pintaAljibe2(); if(aljibe.area === 2 && aljibe.intentos >= 10) hipaso(); }, v => cifra(v, aljibe.cifras));
+  tira('jCifras', [1, 2], () => aljibe.cifras, v => { aljibe.cifras = v; const c = (aljibe.cifras = v, candidatos()); if(!c.includes(aljibe.lado)) aljibe.lado = c[0]; Ruido.grano(2); pintaAljibe2(); }, v => v === 1 ? 'una cifra' : 'dos cifras', 'n v');
+}
+function pintaAljibe2(){ mandosAljibe(); pintaAljibe(); leeAljibe(); revisa(); }
+
+const tesorero = {suma:1000, hasta:24};
+const cruce = s => { for(let n = 1; n <= 64; n++) if(2 ** (n - 1) > n * s) return n; return 65; };
+const NIVELES10 = [0, 3, 6, 9, 12, 15, 18];
+function pintaTesorero(){
+  const g = $('svgTesorero'); g.innerHTML = '';
+  const {suma, hasta} = tesorero, cr = cruce(suma);
+  gotica(g, 12, 24, 'sumar ' + cifra(suma, 0) + ' por casilla, contra doblar · se cruzan en la ' + cr);
+  const x0 = 60, x1 = 520, y0 = 270, y1 = 50;
+  const maxLog = Math.max(Math.log10(hasta * suma), (hasta - 1) * Math.log10(2)) + .3;
+  const Y = v => y0 - Math.log10(Math.max(v, 1)) / maxLog * (y0 - y1);
+  const X = n => x0 + (n - 1) / (hasta - 1) * (x1 - x0);
+  NIVELES10.forEach(e => { if(e <= maxLog){ el(g, 'line', {x1:x0, y1:Y(10 ** e), x2:x1, y2:Y(10 ** e), stroke:'var(--linea)', 'stroke-width':.8, 'stroke-dasharray':'3 4'}); txt(g, x0 - 6, Y(10 ** e) + 4, e ? pot(10, e) : '1', {'text-anchor':'end', 'font-size':10.5}); } });
+  el(g, 'line', {x1:x0, y1:y0, x2:x1, y2:y0, stroke:'var(--linea)', 'stroke-width':1});
+  const puntos = f => Array.from({length:hasta}, (_, i) => X(i + 1).toFixed(1) + ',' + Y(f(i + 1)).toFixed(1)).join(' ');
+  el(g, 'polyline', {points:puntos(n => n * suma), fill:'none', stroke:'var(--figura)', 'stroke-width':2.2, 'stroke-linejoin':'round'});
+  el(g, 'polyline', {points:puntos(n => 2 ** (n - 1)), fill:'none', stroke:'var(--oro)', 'stroke-width':2.6, 'stroke-linejoin':'round'});
+  if(cr <= hasta){
+    el(g, 'line', {x1:X(cr), y1:y0, x2:X(cr), y2:y1, stroke:'var(--acento)', 'stroke-width':1.4, 'stroke-dasharray':'5 4'});
+    el(g, 'circle', {cx:X(cr), cy:Y(2 ** (cr - 1)), r:5, fill:'var(--acento)', class:'nueva'});
+    txt(g, X(cr) + 6, y1 + 12, 'casilla ' + cr, {'font-size':11, fill:'var(--acento)'});
+  }
+  for(let n = 1; n <= hasta; n += (hasta > 24 ? 8 : 4)) txt(g, X(n), y0 + 16, n, {'text-anchor':'middle', 'font-size':10.5});
+  txt(g, x0, y0 + 32, 'sumar: en la casilla n, n × ' + cifra(suma, 0), {'font-size':11, fill:'var(--figura)'});
+  txt(g, x0, y0 + 48, 'doblar: en la casilla n, ' + pot(2, 'n−1'), {'font-size':11, fill:'var(--oro)'});
+  txt(g, x1, y0 + 32, 'el eje sube de diez en diez:', {'text-anchor':'end', 'font-size':10});
+  txt(g, x1, y0 + 46, 'la escalera de la estepa', {'text-anchor':'end', 'font-size':10});
+}
+function leeTesorero(){
+  const {suma, hasta} = tesorero, cr = cruce(suma);
+  const enCruce = 2 ** (cr - 1), sumaCruce = cr * suma;
+  $('lecTesorero').innerHTML =
+    '<span class="def">Sumar lo mismo cada casilla crece siempre igual: una recta. Doblar crece cada vez más, porque lo que se añade es lo que ya había. Por mucho que se sume por casilla, hay una casilla a partir de la cual el doble va delante y no lo alcanzan.</span>'
+    + 'El tesorero ofrece <b>' + cifra(suma, 0) + '</b> granos más por casilla. Al principio gana: en la casilla 5 lleva ' + cifra(5 * suma, 0) + ' contra 16. Pero en la casilla <b>' + cr + '</b> el doble pasa por delante: ' + cifra(enCruce, 0) + ' contra ' + cifra(sumaCruce, 0) + ', y de ahí en adelante ya no hay manera: en la ' + Math.min(hasta, cr + 10) + ', ' + cifra(2 ** (Math.min(hasta, cr + 10) - 1), 0) + ' contra ' + cifra(Math.min(hasta, cr + 10) * suma, 0) + '. '
+    + 'El eje de la gráfica sube de diez en diez, como la escalera de Jefén Giskan: en esa escalera, sumar es una curva que se aplana y doblar es una recta. Es la manera de ver que no lo alcanzan nunca. '
+    + 'Y las comparaciones que engañan: 2¹⁰ = 1.024 contra 10³ = 1.000, gana el dos; 3⁴ = 81 contra 4³ = 64, gana el tres; 2¹⁰⁰ contra 100², ni se discute. Cuando el exponente es el grande, suele ganar.'
+    + '<span class="cuenta">cruce: ' + pot(2, cr - 1) + ' = ' + cifra(enCruce, 0) + ' > ' + cr + ' × ' + cifra(suma, 0) + ' = ' + cifra(sumaCruce, 0) + '</span>';
+}
+function mandosTesorero(){
+  tira('eSuma', [1, 10, 100, 1000, 1000000], () => tesorero.suma, v => { tesorero.suma = v; Ruido.moneda(); pintaTesorero2(); }, v => cifra(v, 0));
+  tira('eHasta', [16, 24, 32, 64], () => tesorero.hasta, v => { tesorero.hasta = v; Ruido.grano(2); pintaTesorero2(); }, v => String(v));
+}
+function pintaTesorero2(){ mandosTesorero(); pintaTesorero(); leeTesorero(); revisa(); }
+
+const SALAS = {tablero:'pTablero', arbol:'pArbol', patio:'pPatio', aljibe:'pAljibe', tesorero:'pTesorero'};
+const LEMAS = {
+  tablero: ['El tablero del trigo', 'el exponente cuenta las veces'],
+  arbol:   ['El árbol del reino', 'apilar niveles es sumar exponentes'],
+  patio:   ['El patio cuadrado', 'la raíz es el lado'],
+  aljibe:  ['El aljibe', 'afinar es acercarse cuanto se quiera'],
+  tesorero:['La cuenta del tesorero', 'doblar gana a sumar, y gana siempre']
+};
+const PINTA = {tablero:pintaTablero2, arbol:pintaArbol2, patio:pintaPatio2, aljibe:pintaAljibe2, tesorero:pintaTesorero2};
+function muestraSala(cual){ for(const k in SALAS) $(SALAS[k]).hidden = (k !== cual); PINTA[cual](); }
+
+const ENCARGOS = [
+  {sala:'tablero', pre(){ tablero.casilla = 1; },
+   t:'Mago, ese sabio que me trajo el tablero pide un grano en la primera casilla y el doble en cada una de las siguientes. Me parece poco. <b>Pon el trigo en la casilla diez</b> y dime cuántos granos hay en ella.',
+   ok: () => tablero.casilla === 10,
+   bien:'<b>Quinientos doce</b>, majestad: un grano doblado nueve veces, que se escribe 2⁹. El nueve no es adorno: <b>cuenta las veces</b>. Y todas las casillas hasta ésta suman 1.023, una menos que la siguiente. Todavía cabe en un saco. Seguid.',
+   mal(){ return 'Estáis en la casilla ' + tablero.casilla + ', majestad. Pedíais la diez.'; }},
+  {sala:'tablero', pre(){ tablero.casilla = 10; },
+   t:'Ese nueve escrito arriba a la derecha de 2⁹. Yo leo «dos, nueve». Mago, ¿qué quiere decir?',
+   ops:[
+     {t:'Que se multiplica dos por nueve: dieciocho.', ok:false, r:'Dieciocho serían dos más dos nueve veces, y eso es sumar. Aquí el dos se multiplica <b>por sí mismo</b> nueve veces: 2·2·2·2·2·2·2·2·2 = 512. El nueve cuenta las veces que se dobla, no las que se suma. Mirad la casilla: 512 granos, no 18.'},
+     {t:'Que el dos se multiplica por sí mismo nueve veces: el nueve cuenta las veces.', ok:true, r:'Eso es, majestad. 2⁹ = 2·2·2·2·2·2·2·2·2 = 512. El número de abajo es <b>lo que se repite</b>, la base; el de arriba, <b>cuántas veces</b>, el exponente. En el tablero, la base es el doble y el exponente son las casillas que se han pasado. Descartes lo escribió así en 1637; yo lo escribo antes porque soy mago.'},
+     {t:'Que hay nueve granos en la casilla.', ok:false, r:'Hay 512, majestad, que los he contado. El nueve no es una cantidad de granos: es una cantidad de <b>veces</b>. Nueve veces doblado el grano de la primera casilla. Por eso crece tan deprisa: cada vez es sobre lo que ya había.'}
+   ]},
+  {sala:'tablero', pre(){ tablero.casilla = 1; },
+   t:'Si en la primera casilla hay 2⁰ granos, que es doblar cero veces… Mago, ¿cuántos granos son doblar cero veces? ¿Ninguno?',
+   ops:[
+     {t:'Ninguno: cero veces es nada.', ok:false, r:'Nada sería que no hubiera grano. Pero el grano estaba antes de doblarlo: doblarlo cero veces es <b>dejarlo como está</b>. Uno. Id hacia atrás desde la casilla 2, que tiene dos: una casilla menos es la mitad, y la mitad de dos es uno. Por eso 2⁰ = 1.'},
+     {t:'Uno: una casilla menos es la mitad, y la mitad de los dos granos de la casilla dos es uno.', ok:true, r:'Uno, majestad, y por esa razón exactamente. La regla del tablero dice «una casilla más es el doble», y hacia atrás, «una menos es la mitad». Si se cumple siempre, 2⁰ tiene que ser 1, y 2⁻¹ medio grano. No se calcula: <b>se define</b> así para que la regla no se rompa. Id a la casilla cero y lo veréis partido.'},
+     {t:'Dos, como en la segunda casilla.', ok:false, r:'Dos son 2¹, una vez doblado. Cero veces doblado es la mitad de eso: uno. La regla hacia atrás es la mitad, y de dos, la mitad es uno. Y de uno, medio: eso es 2⁻¹, que también está en el tablero, antes de empezar.'}
+   ]},
+  {sala:'arbol', pre(){ Object.assign(arbol, {ramas:2, niveles:1, mas:0, veces:1}); },
+   t:'Mi reino tiene tres condados; cada condado, tres villas; cada villa, tres aldeas; cada aldea, tres casas. <b>Levanta el árbol de tres ramas y cuatro niveles</b> y dime cuántas casas tengo.',
+   ok: () => arbol.ramas === 3 && arbol.niveles === 4 && arbol.mas === 0 && arbol.veces === 1,
+   bien:'<b>Ochenta y una</b>, majestad: 3⁴ = 3·3·3·3 = 81. Tres ramas por nudo, cuatro niveles. La base es cuántas ramas; el exponente, cuántos niveles. Es lo mismo que el tablero, con tres en vez de dos: contar veces.',
+   mal(){ if(arbol.ramas !== 3) return 'El árbol tiene ' + arbol.ramas + ' ramas, majestad. Pedíais tres.'; if(arbol.niveles !== 4) return 'Tres ramas, bien, pero ' + arbol.niveles + ' niveles. Pedíais cuatro.'; return 'Quitad lo apilado, majestad: el reino solo, cuatro niveles.'; }},
+  {sala:'arbol', pre(){ Object.assign(arbol, {ramas:3, niveles:4, mas:0, veces:1}); },
+   t:'Cada casa tiene tres cuartos y cada cuarto tres arcas. <b>Apila encima el árbol de dos niveles</b>. ¿Cuántas arcas tengo, y cómo se escribe?',
+   ok: () => arbol.ramas === 3 && arbol.niveles === 4 && arbol.mas === 2 && arbol.veces === 1,
+   bien:'3⁴ · 3² = 3⁶ = <b>729</b> arcas, majestad. Cuatro niveles y dos niveles encima son seis niveles: <b>los exponentes se suman</b> porque son niveles, y los niveles se cuentan. No es una regla que aprender: es un árbol que mirar.',
+   mal(){ if(arbol.ramas !== 3 || arbol.niveles !== 4) return 'El reino era de tres ramas y cuatro niveles, majestad.'; return 'Hay ' + arbol.mas + ' ' + (arbol.mas === 1 ? 'nivel apilado' : 'niveles apilados') + '. Pedíais dos: cuartos y arcas.'; }},
+  {sala:'arbol', pre(){ Object.assign(arbol, {ramas:3, niveles:2, mas:0, veces:3}); },
+   t:'Un árbol de dos niveles, y en cada hoja otro igual, y en cada hoja de ése otro igual: tres veces el mismo árbol. Se escribe (3²)³. Mago, ¿cuántos niveles tiene eso?',
+   ops:[
+     {t:'Cinco: dos más tres.', ok:false, r:'Sumar sería apilar un árbol de dos y uno de tres. Aquí el de dos se apila <b>tres veces</b>: dos, dos y dos, seis niveles. (3²)³ = 3⁶. Cuando es el mismo árbol repetido, los exponentes se <b>multiplican</b>; cuando son dos árboles distintos apilados, se suman.'},
+     {t:'Seis: dos niveles, tres veces; los exponentes se multiplican.', ok:true, r:'Seis, majestad: 2 × 3. Un árbol de árboles. (3²)³ = 3⁶ = 729, y se ve en la escena: tres tramos de dos niveles. Es la tercera cuenta de veces: apilar distinto suma, repetir el mismo multiplica, y las dos salen de contar niveles.'},
+     {t:'Ocho: dos elevado a tres.', ok:false, r:'Dos elevado a tres serían ocho niveles si el exponente doblara al exponente, y no es eso. Se repite un árbol de <b>dos</b> niveles <b>tres</b> veces: dos, dos y dos. Seis. Los niveles se cuentan, y salen 2 × 3.'}
+   ]},
+  {sala:'patio', pre(){ patio.losas = 50; },
+   t:'Al patio de armas. Tengo <b>sesenta y cuatro losas</b>. Ponlas y dime qué patio cuadrado sale.',
+   ok: () => patio.losas === 64,
+   bien:'Un patio de <b>ocho por ocho</b>, majestad, y no sobra ni una: 64 es un cuadrado perfecto y su raíz es 8. Y fijaos: ocho por ocho es <b>el tablero</b>. El patio de armas y el tablero del trigo son el mismo cuadrado.',
+   mal(){ return 'Hay ' + patio.losas + ' losas, majestad. Pedíais sesenta y cuatro.'; }},
+  {sala:'patio', pre(){ patio.losas = 64; },
+   t:'Me han traído seis losas más: <b>setenta</b>. ¿Sale un patio más grande?',
+   ok: () => patio.losas === 70,
+   bien:'No, majestad. Con setenta sale el mismo patio de ocho por ocho, que gasta 64, y <b>sobran seis</b>: para otra fila entera harían falta diecisiete. Setenta no es un cuadrado perfecto. Su raíz no es entera: está <b>entre 8 y 9</b>. Más cerca de 8, si os interesa; para afinarlo, al aljibe.',
+   mal(){ return 'Hay ' + patio.losas + ' losas, majestad. Pedíais setenta.'; }},
+  {sala:'patio', pre(){ patio.losas = 81; },
+   t:'El tesorero me ofrece lotes de 49, 50, 81 y 90 losas. Quiero patios cuadrados sin que sobre nada. Mago, ¿cuáles me sirven?',
+   ops:[
+     {t:'49 y 81: siete por siete y nueve por nueve.', ok:true, r:'Ésos, majestad. 49 = 7² y 81 = 9²: son cuadrados perfectos, y con ellos el patio sale justo. Con 50 sobra una losa y con 90 sobran nueve. Los cuadrados perfectos hasta cien son diez: 1, 4, 9, 16, 25, 36, 49, 64, 81 y 100. Vale la pena saberlos de vista.'},
+     {t:'50 y 90, que son números redondos.', ok:false, r:'Redondos para contar, no para enlosar: 50 losas hacen un patio de 7 por 7 y sobra una; 90 hacen uno de 9 por 9 y sobran nueve. Un cuadrado perfecto es lado por lado: 49 = 7·7 y 81 = 9·9. Ésos son los que sirven.'},
+     {t:'49, 81 y 90.', ok:false, r:'Los dos primeros sí: 7² y 9². Pero 90 no es ningún lado por sí mismo: 9² = 81 y 10² = 100, y 90 está en medio. Sobran nueve losas. Los que sirven son 49 y 81.'}
+   ]},
+  {sala:'aljibe', pre(){ Object.assign(aljibe, {area:50, cifras:1, lado:7.5, intentos:0}); },
+   t:'Quiero un aljibe cuadrado de <b>cincuenta</b> losas. Con lado siete faltan, con ocho sobran. <b>Afina el lado con una cifra decimal</b> y dime entre qué dos se queda.',
+   ok: () => aljibe.area === 50 && aljibe.cifras === 1 && (aljibe.lado === 7 || aljibe.lado === 7.1),
+   bien:'Entre <b>7,0 y 7,1</b>, majestad: 7,0² = 49, que se queda corto, y 7,1² = 50,41, que se pasa. La raíz de cincuenta está en medio, y ya la tenemos cercada con una cifra. Es lo que se llama <b>tanteo</b>: probar, mirar si falta o sobra, y apretar.',
+   mal(){ if(aljibe.area !== 50) return 'El aljibe era de cincuenta, majestad.'; if(aljibe.cifras !== 1) return 'Con una cifra decimal, majestad; las dos vienen después.'; return 'Con lado ' + cifra(aljibe.lado, 1) + ' ' + (aljibe.lado * aljibe.lado > 50 ? 'se pasa de largo' : 'se queda corto de más') + '. Buscad los dos lados que cercan el cincuenta: uno que falte poco y el siguiente, que sobre.'; }},
+  {sala:'aljibe', pre(){ Object.assign(aljibe, {area:50, cifras:1, lado:7, intentos:0}); },
+   t:'Entre 7,0 y 7,1 hay mucho aljibe. <b>Afina con dos cifras</b>.',
+   ok: () => aljibe.area === 50 && aljibe.cifras === 2 && (aljibe.lado === 7.07 || aljibe.lado === 7.08),
+   bien:'Entre <b>7,07 y 7,08</b>: 7,07² = 49,9849, que falta un poco, y 7,08² = 50,1264, que sobra. Cada cifra aprieta diez veces más. Con tres cifras sería entre 7,071 y 7,072, y así hasta donde queráis: √50 = 7,0710678… Nunca cuadra del todo, y no hace falta: para el albañil, 7,07 sobra.',
+   mal(){ if(aljibe.cifras !== 2) return 'Pasad a dos cifras, majestad.'; return 'Con ' + cifra(aljibe.lado, 2) + ' ' + (aljibe.lado * aljibe.lado > 50 ? 'sobra' : 'falta') + ' más de la cuenta. Buscad los dos que lo cercan.'; }},
+  {sala:'aljibe', pre(){ Object.assign(aljibe, {area:2, cifras:1, lado:1, intentos:0}); },
+   t:'Un aljibe pequeño, de <b>dos</b> losas. Con una cifra no cuadra, con dos no cuadra. Mago: si afino bastante, ¿acabará cuadrando?',
+   ops:[
+     {t:'Sí: con bastantes cifras decimales acaba cuadrando.', ok:false, r:'No acaba nunca, majestad, y no es por falta de cifras. La raíz de dos no es ninguna fracción, y un lado con cifras decimales es una fracción. Está demostrado en ocho líneas, en las deudas. Se puede acercar cuanto se quiera: 1,4; 1,41; 1,414; y no cuadrar jamás.'},
+     {t:'No: la raíz de dos no es ninguna fracción. Se acerca cuanto se quiera y no cuadra nunca.', ok:true, r:'Eso es, majestad, y es de las cosas más viejas que se saben. Si √2 fuera una fracción simplificada p/q, p² sería el doble de q², luego p par, luego p² múltiplo de cuatro, luego q² par, luego q par: los dos pares, y la fracción no estaba simplificada. Los números así se llaman <b>irracionales</b>, y éste fue el primero. El aljibe de dos losas se hace igual: con 1,41 sobra tan poco que no lo nota nadie.'},
+     {t:'Sí: 1,41 al cuadrado es dos.', ok:false, r:'1,41² = 1,9881, majestad: falta. Y 1,42² = 2,0164: sobra. Con tres cifras, 1,414² = 1,999396: falta. Nunca cuadra, porque √2 no es fracción. Se acerca cuanto se quiera, que es otra cosa, y para el albañil es la misma.'}
+   ]},
+  {sala:'tesorero', pre(){ Object.assign(tesorero, {suma:1, hasta:16}); },
+   t:'El tesorero propone pagar al sabio <b>mil granos más por casilla</b> en vez del doble, «que mil es mucho». <b>Pon mil por casilla</b> y dime en qué casilla el doble lo pasa.',
+   ok: () => tesorero.suma === 1000 && tesorero.hasta >= 16,
+   bien:'En la casilla <b>quince</b>, majestad. En la catorce el doble lleva 8.192 y el tesorero 14.000: aún gana él. En la quince, 16.384 contra 15.000, y ya no lo alcanza nunca. Doblar empieza despacio y gana siempre. Mil por casilla parece mucho porque el tesorero mira las primeras casillas, que es donde no pasa nada.',
+   mal(){ if(tesorero.suma !== 1000) return 'Son ' + cifra(tesorero.suma, 0) + ' por casilla, majestad. Pedíais mil.'; return 'Mirad hasta la casilla dieciséis por lo menos.'; }},
+  {sala:'tesorero', pre(){ Object.assign(tesorero, {suma:1000, hasta:16}); },
+   t:'Una apuesta de la corte: ¿qué es más, 2¹⁰ o 10³? El diez es más grande que el dos, dice el tesorero.',
+   ops:[
+     {t:'10³: el diez es más grande que el dos.', ok:false, r:'La base es más grande, pero el exponente es más pequeño, y aquí manda el exponente: 2¹⁰ = 1.024 y 10³ = 1.000. Gana el dos por veinticuatro. Para un mago, mil son mil veinticuatro: es la casilla once del tablero.'},
+     {t:'2¹⁰: son 1.024 contra 1.000.', ok:true, r:'Mil veinticuatro contra mil, majestad. Y no es casualidad que se parezcan tanto: por eso los que cuentan con máquinas llaman «mil» a 1.024. Otras que engañan: 3⁴ = 81 contra 4³ = 64, gana el tres; 2¹⁰⁰ contra 100², ni se discute. Cuando el exponente es el grande, suele ganar, porque cuenta veces.'},
+     {t:'Son iguales: mil y mil.', ok:false, r:'Casi, majestad, pero no: 2¹⁰ = 1.024. Se parecen tanto que los que cuentan con máquinas llaman «mil» a 1.024, y por eso Listosín dice que para un mago mil son mil veinticuatro. 10³ = 1.000 exacto. Gana el dos.'}
+   ]},
+  {sala:'tesorero', pre(){ Object.assign(tesorero, {suma:1000000, hasta:64}); },
+   t:'Última, mago, y quiero la verdad. La casilla sesenta y cuatro. ¿Lo paga el reino?',
+   ops:[
+     {t:'Sí: el reino es grande y el trigo, barato.', ok:false, r:'El reino es grande, majestad, pero la casilla sesenta y cuatro tiene 2⁶³ granos: veinte cifras, ' + cifraBig(pot2(63)) + '. Solo esa casilla pesa más que todo el trigo que se cosecha en el mundo en más de mil años. No lo paga el reino ni lo paga el mundo. Por eso os lo pidió: sabía contar.'},
+     {t:'No: son veinte cifras, más de mil cosechas del mundo entero.', ok:true, r:'No lo paga, majestad. 2⁶³ = ' + cifraBig(pot2(63)) + ' granos en esa casilla, y el tablero entero 2⁶⁴ − 1 = ' + cifraBig(pot2(64) - 1n) + ': a cincuenta miligramos el grano, unas novecientas mil millones de toneladas, y el mundo cosecha ochocientos millones al año. Más de mil años sin comer. Lo pequeño, repetido muchas veces, no lo aguanta ningún reino. Recordadlo cuando vayáis a las justas.'},
+     {t:'Sí, pagando en varios años.', ok:false, r:'En varios miles de años, majestad, y sin que nadie comiera pan mientras tanto: el tablero pesa más de mil cosechas del mundo entero. 2⁶⁴ − 1 = ' + cifraBig(pot2(64) - 1n) + ' granos. El sabio no quería trigo: quería que el rey aprendiera a contar veces.'}
+   ]}
+];
+
+const RANGOS = [
+  {n:'Copero',            s:'el tablero',   hasta:3,  campo:'plata',   fig:'copa'},
+  {n:'Senescal',          s:'el árbol',     hasta:6,  campo:'azur',    fig:'llave'},
+  {n:'Chambelán',         s:'el patio',     hasta:9,  campo:'sinople', fig:'banda'},
+  {n:'Canciller',         s:'el aljibe',    hasta:12, campo:'gules',   fig:'pluma'},
+  {n:'Consejero del rey', s:'el tesorero',  hasta:15, campo:'purpura', fig:'estrellas'},
+  {n:'Mago de la corte',  s:'las quince cuentas', hasta:99, campo:'purpura', fig:'estrellas', borde:'var(--oro)'}
+];
+function rangoDe(n){ return RANGOS.find(r => n < r.hasta) || RANGOS[RANGOS.length - 1]; }
+const granosDe = n => n ? cifraBig(pot2(n) - 1n) : '0';
+function pintaRango(){
+  const n = hechos.size, r = rangoDe(n), i = RANGOS.indexOf(r);
+  const desde = i ? RANGOS[i - 1].hasta : 0, tramo = Math.min(r.hasta, ENCARGOS.length) - desde;
+  $('rangoNom').textContent = r.n;
+  $('rangoSig').textContent = r.s;
+  $('rangoCuenta').textContent = n >= ENCARGOS.length ? 'corte cerrada · ' + n + ' de ' + ENCARGOS.length
+    : (n - desde) + ' de ' + tramo + ' para ' + (RANGOS[i + 1] ? RANGOS[i + 1].n.toLowerCase() : '');
+  $('rangoBarra').style.width = (n >= ENCARGOS.length ? 100 : Math.round((n - desde) / tramo * 100)) + '%';
+  $('granosT').textContent = granosDe(n);
+  const e = $('rangoEscudo'); e.innerHTML = '<svg viewBox="0 0 40 48" aria-hidden="true"></svg>';
+  escudo(e.firstChild, 0, 1, 40, r.campo, r.fig, r.borde ? {borde:r.borde} : {});
+}
+
+let enc = 0, elegida = null;
+const hechos = new Set();
+const dichos = {};
+const huevos = new Set();
+const HUEVOS = ['puerta', 'barba', 'kilo', 'patio', 'mitad', 'hipaso', 'sissa', 'mago'];
+const HUEVO_DICE = {
+  puerta:'el que no cabe por la puerta', barba:'la barba que se dobla', kilo:'el millar del mago', patio:'el patio es el tablero',
+  mitad:'el grano partido', hipaso:'el griego del aljibe', sissa:'el sabio que pidió el trigo', mago:'mago de la corte'
+};
+let ultimoRango = 'Copero';
+
+const GUARDADO = 'corte.turno.v1';
+const CADUCA = 4*60*60*1000;
+let t0 = Date.now();
+function guardaTurno(){
+  try{
+    localStorage.setItem(GUARDADO, JSON.stringify({
+      v:1, ts:Date.now(), t0, enc, hechos:[...hechos], huevos:[...huevos], nombre:$('selloNombre').value || '',
+      taller:{ac:taller.ac, racha:taller.racha, mejor:taller.mejor}, aj:AJ
+    }));
+  }catch(e){}
+}
+function leeTurno(){
+  try{
+    const d = JSON.parse(localStorage.getItem(GUARDADO) || 'null');
+    if(!d || d.v !== 1 || !Array.isArray(d.hechos)) return null;
+    if(!(d.enc >= 0 && d.enc < ENCARGOS.length)) return null;
+    if(Date.now() - d.ts > CADUCA){ borraTurno(); return null; }
+    return d;
+  }catch(e){ return null; }
+}
+function borraTurno(){ try{ localStorage.removeItem(GUARDADO); }catch(e){} }
+const dicho = x => typeof x === 'function' ? x() : x;
+
+function pintaOpciones(){
+  const e = ENCARGOS[enc], caja = $('ops');
+  caja.innerHTML = ''; caja.hidden = !e.ops;
+  if(!e.ops) return;
+  e.ops.forEach((o, i) => {
+    const b = document.createElement('button');
+    b.className = 'op'; b.textContent = o.t;
+    b.setAttribute('aria-pressed', String(elegida === i));
+    b.addEventListener('click', () => { if(hechos.has(enc)) return; elegida = i; pintaOpciones(); });
+    caja.appendChild(b);
+  });
+}
+const CIERRE = '<b>Corte cerrada: quince cuentas, y el sombrero es vuestro.</b> Todo lo de esta corte era contar veces. Una potencia es doblar, o triplicar, tantas veces como diga el exponente; '
+  + 'apilar niveles es sumar exponentes y repetir un árbol es multiplicarlos; el cero y los negativos se definen para que la regla no se rompa hacia atrás. La raíz es deshacer el cuadrado, '
+  + 'y cuando no sale entera se afina, y a veces no se llega nunca, y no pasa nada. Y lo que solo el tablero enseña: doblar gana a sumar, siempre, y a la casilla sesenta y cuatro no llega ningún reino. '
+  + 'Lo pequeño, repetido muchas veces, no lo aguanta ningún reino. En las justas, dentro de unos días, lo volveréis a oír con una moneda.';
+function pintaEncargo(){
+  const e = ENCARGOS[enc], ultimo = enc === ENCARGOS.length - 1, hecho = hechos.has(enc);
+  if(e.pre) e.pre();
+  muestraSala(e.sala);
+  elegida = hecho && e.ops ? e.ops.findIndex(o => o.ok) : null;
+  pintaOpciones();
+  $('encTxt').innerHTML = (ultimo && hecho) ? CIERRE : e.t;
+  $('cual').textContent = (ultimo && hecho) ? 'corte cerrada' : 'encargo ' + (enc + 1) + ' de ' + ENCARGOS.length;
+  $('atras').disabled = enc === 0;
+  $('comprobar').textContent = !hecho ? 'Comprobar' : (ultimo ? 'Empezar de nuevo' : 'Siguiente encargo →');
+  const inf = $('informe');
+  inf.hidden = !hecho;
+  if(hecho){ inf.className = 'panel informe encargo'; $('infTxt').innerHTML = dichos[enc] || (e.ops ? dicho(e.ops.find(o => o.ok).r) : dicho(e.bien)); }
+  pintaIndice(); pintaRango();
+}
+function revisa(){
+  const e = ENCARGOS[enc];
+  if(tablero.casilla <= 0 && !$('pTablero').hidden) huevo('mitad');
+  if(!e || e.ops || !hechos.has(enc)) return;
+  $('informe').hidden = false;
+}
+
+const dentroDe = svg => svg.replace(/^[\s\S]*?<svg[^>]*>/, '').replace(/<\/svg>\s*$/, '');
+const JEFARTURO_BIEN = '<svg viewBox="0 -10 46 58" aria-hidden="true">' + dentroDe(CARA_JEFARTURO)
+  + '<path d="M36 -1 l1.6 -4.6 l1.6 4.6 l4.6 1.6 l-4.6 1.6 l-1.6 4.6 l-1.6 -4.6 l-4.6 -1.6 Z" fill="#E0B24A"/><path d="M8 8 l1 -3 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 Z" fill="#E0B24A"/></svg>';
+const JEFARTURO_MAL = '<svg viewBox="0 -10 46 58" aria-hidden="true">' + dentroDe(CARA_JEFARTURO)
+  + '<g transform="rotate(-8 23 22)"><path d="M9 20 L9 12 L14 17 L19 9 L24 17 L29 9 L34 17 L39 12 L39 20 Z" fill="#E0B24A" stroke="#241C36" stroke-width="1.2" stroke-linejoin="round"/><path d="M9 20 H39 V24 H9 Z" fill="#E0B24A" stroke="#241C36" stroke-width="1.2"/></g></svg>';
+const CACHALOTE_PUERTA = '<svg viewBox="0 0 46 48" aria-hidden="true">' + dentroDe(CARA_CACHALOTE)
+  + '<g transform="translate(-6 22) scale(.52)">' + dentroDe(CARA_PERCEBAL) + '</g></svg>';
+const LISTOSIN_ALTO = '<svg viewBox="0 -12 46 60" aria-hidden="true">' + dentroDe(CARA_LISTOSIN)
+  + '<path d="M12 30 Q4 22 8 8" fill="none" stroke="#241C36" stroke-width="5" stroke-linecap="round"/><path d="M12 30 Q4 22 8 8" fill="none" stroke="#5FA0BE" stroke-width="3.2" stroke-linecap="round"/>'
+  + '<rect x="2" y="-10" width="14" height="18" rx="1.5" fill="#B9A88C" stroke="#241C36" stroke-width="1"/><rect x="4" y="-8" width="10" height="14" fill="#f2f6fb"/><rect x="6" y="-12" width="6" height="3" rx="1" fill="#241C36"/>'
+  + '<g stroke="#241C36" stroke-width=".8"><path d="M6 -4 h6"/><path d="M6 -1 h6"/><path d="M6 2 h4"/></g></svg>';
+$('asomoLado').innerHTML = CACHALOTE_PUERTA;
+$('asomoEntero').innerHTML = LISTOSIN_ALTO;
+
+const asomoReloj = {};
+function asoma(id, clase, contenido, ms){
+  const a = $(id); clearTimeout(asomoReloj[id]);
+  if(contenido) a.innerHTML = contenido;
+  const base = a.className.replace(/\s*\b(mira|falla)\b/g, '');
+  a.className = base; void a.offsetWidth;
+  a.className = base + ' ' + clase;
+  asomoReloj[id] = setTimeout(() => { a.className = base; }, ms);
+}
+function asomate(bien){ asoma('asomoArriba', bien ? 'mira' : 'mira falla', bien ? JEFARTURO_BIEN : JEFARTURO_MAL, 2400); }
+function asciende(){ asoma('asomoEntero', 'mira', null, 2800); }
+function magia(){
+  const c = $('caraListosin'); c.classList.add('magia'); setTimeout(() => c.classList.remove('magia'), 1200);
+  const inf = $('informe');
+  for(let i = 0; i < 10; i++){
+    const s = document.createElement('i'); s.className = 'chispa';
+    s.style.left = (54 + Math.random() * 10) + 'px'; s.style.top = (14 + Math.random() * 20) + 'px';
+    s.style.setProperty('--dx', (Math.random() * 90 - 30) + 'px'); s.style.setProperty('--dy', (-30 - Math.random() * 70) + 'px');
+    s.style.animationDelay = (Math.random() * .3) + 's';
+    inf.appendChild(s); setTimeout(() => s.remove(), 1600);
+  }
+}
+function lluvia(){
+  const p = $('pEncargo'); $('granos').classList.add('lluvia'); setTimeout(() => $('granos').classList.remove('lluvia'), 2000);
+  for(let i = 0; i < 40; i++){
+    const g = document.createElement('i'); g.className = 'grano';
+    g.style.left = (Math.random() * 100) + '%'; g.style.top = '0'; g.style.animationDuration = (1.4 + Math.random() * 1.4) + 's'; g.style.animationDelay = (Math.random() * .9) + 's';
+    p.appendChild(g); setTimeout(() => g.remove(), 3600);
+  }
+  Ruido.grano(8);
+}
+const PUERTA = [
+  'No quepo. Seguid sin mí.',
+  '¿Va bien la cuenta? Yo desde aquí solo veo la corona.',
+  'Percebal dice que apunta lo que oye. Dice que van muchos granos.',
+  'Cuando acabéis, en la liza os espero. Allí sí quepo.',
+  'Mago, ¿la barba también se dobla? Es que se me ha ocurrido.'
+];
+let quieto = null, puertaReloj = null;
+function puertaFuera(){ clearTimeout(puertaReloj); $('asomoLado').classList.remove('mira'); $('globoLado').classList.remove('mira'); }
+function puertaAsoma(){
+  if(taller.enTaller || $('pEncargo').hidden || !$('tourCapa').hidden || !$('mAjustes').hidden || !$('mSello').hidden || document.hidden) return;
+  $('globoLado').textContent = PUERTA[Math.floor(Math.random() * PUERTA.length)];
+  $('asomoLado').classList.add('mira'); $('globoLado').classList.add('mira');
+  huevo('puerta');
+  puertaReloj = setTimeout(puertaFuera, 6000);
+}
+function armaQuieto(){ clearTimeout(quieto); puertaFuera(); quieto = setTimeout(puertaAsoma, 60000); }
+['pointerdown', 'keydown', 'scroll'].forEach(ev => addEventListener(ev, armaQuieto, {passive:true}));
+let barbaVeces = 0;
+const BARBA_SVG = '<svg viewBox="0 0 22 100" preserveAspectRatio="none" aria-hidden="true"><path d="M2 0 H20 Q22 30 19 60 Q16 90 11 100 Q6 90 3 60 Q0 30 2 0 Z" fill="#EFE7D6" stroke="#241C36" stroke-width="1.2" vector-effect="non-scaling-stroke"/><path d="M7 8 Q11 20 7 34 M15 8 Q11 20 15 34 M8 44 Q11 60 8 76 M14 44 Q11 60 14 76" fill="none" stroke="#C6CBD1" stroke-width="1" vector-effect="non-scaling-stroke"/></svg>';
+$('caraListosin').addEventListener('click', () => {
+  Ruido.despierta(); Ruido.magia(); huevo('barba');
+  const b = $('barba'); if(!b.innerHTML) b.innerHTML = BARBA_SVG;
+  barbaVeces++;
+  const h = 6 * 2 ** (barbaVeces - 1);
+  if(barbaVeces > 6){ barbaVeces = 0; b.style.height = '0px';
+    $('infTxt').innerHTML += '<span class="murmullo">Listosín, recogiéndose la barba: «Seis veces doblada, ' + (6 * 32) + ' veces más larga. Así es como funciona esto. Así es como funciona todo».</span>'; return; }
+  b.style.height = h + 'px';
+  magia();
+});
+function huevo(nombre){
+  if(!HUEVO_DICE[nombre] || huevos.has(nombre)) return;
+  huevos.add(nombre); guardaTurno();
+}
+function hipaso(){
+  if(huevos.has('hipaso')) return;
+  huevo('hipaso');
+  const inf = $('informe'); inf.hidden = false; inf.className = 'panel informe encargo';
+  $('infTxt').innerHTML = 'Majestad, dejadlo: no cuadra, y no es culpa vuestra. Un griego llamado <b>Hipaso</b> dijo esto mismo en voz alta hace mil años, que la raíz de dos no es ninguna fracción, y cuentan que sus compañeros lo tiraron al mar por decirlo. La demostración cabe en ocho líneas y está en las deudas, abierta.';
+  magia();
+  setTimeout(() => { cierraPaneles(); $('pDeudas').hidden = false; $('bDeudas').setAttribute('aria-pressed', 'true'); const d = $('pDeudas').querySelectorAll('details')[1]; d.open = true; d.scrollIntoView({behavior:'smooth', block:'start'}); }, 900);
+}
+
+$('comprobar').addEventListener('click', () => {
+  const e = ENCARGOS[enc], inf = $('informe');
+  Ruido.despierta();
+  if(hechos.has(enc)){
+    if(enc < ENCARGOS.length - 1){ enc++; pintaEncargo(); }
+    else { hechos.clear(); enc = 0; ultimoRango = 'Copero'; pintaEncargo(); }
+    guardaTurno(); return;
+  }
+  let bien, dice;
+  if(e.ops){
+    if(elegida === null){ bien = false; dice = 'Elegid una, majestad. «Ninguna» no se cuenta.'; }
+    else { const o = e.ops[elegida]; bien = o.ok; dice = dicho(o.r);
+           if(!bien){ document.querySelectorAll('.op')[elegida].classList.add('fallada'); } }
+  }else{ bien = e.ok(); dice = bien ? dicho(e.bien) : dicho(e.mal); }
+  inf.hidden = false;
+  inf.className = 'panel informe encargo' + (bien ? '' : ' mal');
+  $('infTxt').innerHTML = dice;
+  asomate(bien);
+  if(bien){
+    hechos.add(enc); dichos[enc] = dice;
+    const r = rangoDe(hechos.size).n, sube = r !== ultimoRango;
+    if(sube){ ultimoRango = r; Ruido.asciende(); asciende(); if(hechos.size === 9 || hechos.size >= 15) setTimeout(lluvia, 300); } else Ruido.bien();
+    magia();
+    pintaEncargo(); inf.hidden = false;
+    $('infTxt').innerHTML = dice + (sube ? '<br><b>' + (hechos.size >= ENCARGOS.length ? 'Listosín se quita el sombrero y os lo pone: mago de la corte.' : 'Asciende a ' + r.toLowerCase() + '.') + '</b>' : '');
+    if(hechos.size >= ENCARGOS.length) huevo('mago');
+    guardaTurno();
+  } else Ruido.mal();
+});
+$('atras').addEventListener('click', () => { if(enc > 0){ enc--; pintaEncargo(); guardaTurno(); } });
+
+function pintaIndice(){
+  const s = $('ixSalas');
+  if(!s.dataset.puesto){
+    s.dataset.puesto = '1';
+    Object.keys(SALAS).forEach(k => {
+      const b = document.createElement('button'); b.className = 'b'; b.textContent = LEMAS[k][0];
+      b.addEventListener('click', () => { muestraSala(k); cierraPaneles(); $(SALAS[k]).scrollIntoView({behavior:'smooth', block:'start'}); });
+      s.appendChild(b);
+    });
+  }
+  const l = $('ixLista'); l.innerHTML = '';
+  ENCARGOS.forEach((e, i) => {
+    const b = document.createElement('button');
+    b.className = (hechos.has(i) ? 'hecho ' : '') + (i === enc ? 'actual' : '');
+    b.innerHTML = '<b>' + String(i + 1).padStart(2, '0') + '</b>' + LEMAS[e.sala][0] + ' · ' + e.t.replace(/<[^>]*>/g, '').slice(0, 52) + '…';
+    b.addEventListener('click', () => { enc = i; pintaEncargo(); cierraPaneles(); guardaTurno(); scrollTo({top:0, behavior:'smooth'}); });
+    l.appendChild(b);
+  });
+}
+const PANELES = {bIndice:'pIndice', bGlosario:'pGlosario', bDeudas:'pDeudas'};
+function cierraPaneles(){
+  Object.entries(PANELES).forEach(([b, p]) => { $(p).hidden = true; $(b).setAttribute('aria-pressed', 'false'); });
+  $('pSissa').hidden = true;
+}
+Object.entries(PANELES).forEach(([b, p]) => $(b).addEventListener('click', () => {
+  const abre = $(p).hidden; cierraPaneles();
+  if(abre){ $(p).hidden = false; $(b).setAttribute('aria-pressed', 'true'); if(p === 'pIndice') pintaIndice();
+            $(p).scrollIntoView({behavior:'smooth', block:'start'}); }
+}));
+$('ixCerrar').addEventListener('click', () => { cierraPaneles(); pintaEncargo(); scrollTo({top:0, behavior:'smooth'}); });
+$('ixTodo').addEventListener('click', () => { ENCARGOS.forEach((_, i) => hechos.add(i)); enc = ENCARGOS.length - 1; ultimoRango = rangoDe(hechos.size).n; pintaEncargo(); guardaTurno(); });
+{
+  let armado = false, reloj = 0;
+  const desarma = () => { armado = false; clearTimeout(reloj); $('ixCero').classList.remove('armado'); $('ixCero').textContent = 'Empezar de cero'; };
+  $('ixCero').addEventListener('click', () => {
+    if(!armado){ armado = true; $('ixCero').classList.add('armado'); $('ixCero').textContent = 'Pulsa otra vez para borrarlo';
+      clearTimeout(reloj); reloj = setTimeout(desarma, 5000); return; }
+    desarma(); borraTurno(); hechos.clear(); huevos.clear(); enc = 0; taller.ac = 0; taller.racha = 0; taller.mejor = 0; ultimoRango = 'Copero'; t0 = Date.now();
+    pintaEncargo();
+  });
+}
+
+const GLOSARIO = [
+  ['potencia', 'contar veces', 'aⁿ es a multiplicado por sí mismo n veces. En el tablero, 2⁹ es un grano doblado nueve veces: 512. El número de abajo se repite; el de arriba cuenta.'],
+  ['base', 'lo que se repite', 'El número que se multiplica por sí mismo. En el tablero es dos; en el árbol, cuántas ramas salen de cada nudo.'],
+  ['exponente', 'cuántas veces', 'El número pequeño de arriba. No se multiplica: cuenta. 2⁹ no es dos por nueve, es dos nueve veces. Descartes lo escribió así arriba en 1637.'],
+  ['exponente cero', 'a⁰ = 1', 'Se define, no se calcula: para que «un exponente menos es dividir entre la base» siga valiendo desde a¹ = a. En el árbol, el nivel cero es el tronco solo.'],
+  ['exponente negativo', 'a⁻ⁿ = 1/aⁿ', 'Se define igual, siguiendo hacia atrás: 2⁻¹ es medio grano, 2⁻² un cuarto. Antes de la primera casilla el grano se parte.'],
+  ['producto de potencias', 'aᵐ · aⁿ = aᵐ⁺ⁿ', 'Apilar un árbol sobre otro: los niveles se suman. 3⁴ · 3² = 3⁶, porque cuatro niveles y dos niveles son seis.'],
+  ['potencia de potencia', '(aᵐ)ⁿ = aᵐ·ⁿ', 'Repetir el mismo árbol n veces: los niveles se multiplican. (3²)³ = 3⁶, porque dos niveles tres veces son seis.'],
+  ['cuadrado perfecto', 'lado por lado', 'Un número con el que se hace un patio cuadrado sin que sobre ninguna losa: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100…'],
+  ['raíz cuadrada', 'el lado', 'El número no negativo que al cuadrado da el que se tiene. √64 = 8 porque 8² = 64. Deshacer el cuadrado.'],
+  ['raíz entera', 'el lado que sale', 'Cuando sobran losas, el lado del patio más grande que sale: √70 tiene raíz entera 8, y sobran 6. La raíz está entre 8 y 9.'],
+  ['tanteo', 'probar y apretar', 'Afinar una raíz probando lados con una cifra, luego con dos: mirar si sobra o falta y cercar. Es un método honrado, no un fallo.'],
+  ['irracional', 'no es fracción', 'Un número que no es ninguna fracción. La raíz de dos fue el primero, y por eso el aljibe de dos losas no cuadra nunca.'],
+  ['jadhr', 'raíz, en árabe', 'La palabra árabe para la raíz de una planta y para la raíz de un número. Los traductores de Toledo la pasaron al latín como <i>radix</i>, y de ahí «raíz».'],
+  ['al-Juarismi', 'Bagdad, hacia 820', 'El que escribió el libro del <i>al-jabr</i>, de donde viene «álgebra». Se tradujo en Toledo en el siglo XII, y con él llegaron las raíces y las cifras.'],
+  ['Sissa', 'el sabio del ajedrez', 'Según la leyenda, inventó el ajedrez para un rey y pidió de premio un grano en la primera casilla y el doble en cada una de las siguientes. No está en el índice.'],
+  ['Ibn Jallikán', '1256', 'El que escribió la cuenta entera del trigo del tablero en árabe, en un diccionario de biografías: dos elevado a sesenta y cuatro menos uno.'],
+  ['copero', 'el primer oficio', 'El que sirve la copa al rey. El primer rango de la corte, y el que menos cuentas hace.'],
+  ['senescal', 'el de las llaves', 'El que gobierna la casa del rey: las llaves, las cuentas de la despensa.'],
+  ['chambelán', 'el de la cámara', 'El que guarda la cámara del rey y ordena quién entra.'],
+  ['canciller', 'el de la pluma', 'El que escribe y sella las cartas del rey. La carta real de esta app la firma él.'],
+  ['tablero', 'sesenta y cuatro', 'Ocho por ocho: un cuadrado perfecto. El mando propio de la corte; en las justas, la tabla es de treinta y seis.']
+];
+$('glosas').innerHTML = GLOSARIO.map(([p, n, d, id]) => '<div class="glosa"' + (id ? ' id="glosa_' + id + '"' : '') + '><span><b>' + p + '</b><i>' + n + '</i></span><p>' + d + '</p></div>').join('');
+
+function pintaSissa(){
+  $('sissaCifras').textContent = cifraBig(pot2(64) - 1n);
+  const g = $('svgSissa'); g.innerHTML = '';
+  gotica(g, 12, 24, 'cada punto, una cosecha del mundo entero · el tablero son más de mil');
+  const x0 = 20, y0 = 44, cols = 50, filas = 23, dx = 10.2, dy = 8.2;
+  for(let i = 0; i < cols * filas; i++) el(g, 'circle', {cx:x0 + (i % cols) * dx + 4, cy:y0 + Math.floor(i / cols) * dy + 4, r:2.6, fill:i === 0 ? 'var(--acento)' : 'var(--oro)', 'fill-opacity':i === 0 ? 1 : .55});
+  el(g, 'circle', {cx:x0 + 4, cy:y0 + 4, r:6, fill:'none', stroke:'var(--acento)', 'stroke-width':1.5});
+  txt(g, x0, 256, 'el primero es este año', {'font-size':10, fill:'var(--acento)'});
+  txt(g, 528, 244, 'cada punto, una cosecha: 800 millones de toneladas', {'text-anchor':'end', 'font-size':9.5});
+  txt(g, 528, 256, '1.150 puntos: los 900.000 millones del tablero', {'text-anchor':'end', 'font-size':9.5});
+}
+function abreSissa(por){
+  huevo('sissa');
+  cierraPaneles(); entraTaller(false); $('mAjustes').hidden = true; $('mSello').hidden = true;
+  pintaSissa();
+  const p = $('pSissa'); p.hidden = false;
+  p.querySelector('.aviso').textContent = 'Esta sala se ha abierto por ' + por + '. No sale en el índice.';
+  p.scrollIntoView({behavior:'smooth', block:'start'});
+}
+{
+  let tecleado = '';
+  addEventListener('keydown', e => {
+    if(/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName) || e.key.length !== 1) return;
+    tecleado = (tecleado + e.key.toLowerCase()).slice(-8);
+    if(/sissa/.test(tecleado)){ tecleado = ''; abreSissa('el nombre del sabio, escrito'); }
+  });
+}
+
+const numeroLibre = v => { const s = String(v).trim(); const n = parseFloat(s.includes(',') ? s.replace(/\./g, '').replace(',', '.') : s); return isNaN(n) ? null : n; };
+const casi = (v, sol, tol = 1e-9) => { const n = numeroLibre(v); return n !== null && Math.abs(n - sol) <= tol; };
+const solTxt = e => typeof e.sol === 'string' ? e.sol : (Number.isInteger(e.sol) ? cifra(e.sol, 0) : cifra(e.sol, 2));
+
+const TIPOS = {
+  potencia: {n:'La potencia', sala:'tablero', gen(){
+    const b = elige([2, 2, 3, 4, 5, 10]), n = b === 10 ? al(0, 5) : b === 2 ? al(0, 10) : al(0, 4), sol = b ** n;
+    return {t:'¿Cuánto es <b>' + pot(b, n) + '</b>?', sol, ok:v => casi(v, sol), exp:n === 0 ? pot(b, 0) + ' = 1: cero veces es dejarlo como está.' : b + ' multiplicado por sí mismo ' + n + (n === 1 ? ' vez' : ' veces') + ': ' + cifra(sol, 0) + '.',
+            pon:b === 2 && n <= 63 ? () => { tablero.casilla = n + 1; } : () => { Object.assign(arbol, {ramas:Math.min(b, 5), niveles:Math.min(n, 5), mas:0, veces:1}); }, sala:b === 2 ? 'tablero' : 'arbol'};
+  }},
+  propiedades: {n:'Las propiedades', sala:'arbol', gen(){
+    const b = elige([2, 3, 5, 7, 10]), modo = elige(['suma', 'suma', 'resta', 'pot']);
+    if(modo === 'suma'){ const m = al(1, 6), n = al(1, 6);
+      return {t:pot(b, m) + ' · ' + pot(b, n) + ' = ' + b + '<sup>?</sup>. ¿Qué exponente queda?', sol:m + n, ok:v => casi(v, m + n), exp:'Apilar ' + m + ' niveles y ' + n + ' niveles: ' + (m + n) + '. Los exponentes se suman.', pon(){ Object.assign(arbol, {ramas:Math.min(b, 5), niveles:Math.min(m, 5), mas:Math.min(n, 3), veces:1}); }}; }
+    if(modo === 'resta'){ const n = al(1, 4), m = n + al(1, 5);
+      return {t:pot(b, m) + ' ÷ ' + pot(b, n) + ' = ' + b + '<sup>?</sup>. ¿Qué exponente queda?', sol:m - n, ok:v => casi(v, m - n), exp:'Quitar ' + n + ' niveles de ' + m + ': ' + (m - n) + '. Los exponentes se restan.', pon(){ Object.assign(arbol, {ramas:Math.min(b, 5), niveles:Math.min(m - n, 5), mas:0, veces:1}); }}; }
+    const m = al(1, 4), n = al(2, 3);
+    return {t:'(' + pot(b, m) + ')' + sup(n) + ' = ' + b + '<sup>?</sup>. ¿Qué exponente queda?', sol:m * n, ok:v => casi(v, m * n), exp:'El mismo árbol de ' + m + ' niveles, ' + n + ' veces: ' + m * n + '. Los exponentes se multiplican.', pon(){ Object.assign(arbol, {ramas:Math.min(b, 5), niveles:Math.min(m, 5), mas:0, veces:n}); }};
+  }},
+  cuadrados: {n:'Los cuadrados', sala:'patio', gen(){
+    const k = al(1, 20), modo = elige(['raiz', 'cuadrado']);
+    if(modo === 'cuadrado') return {t:'¿Cuánto es <b>' + k + '²</b>?', sol:k * k, ok:v => casi(v, k * k), exp:k + ' por ' + k + ' = ' + k * k + ': un patio de ' + k + ' de lado.', pon:k <= 10 ? () => { patio.losas = k * k; } : null};
+    return {t:'¿Cuánto es <b>√' + k * k + '</b>?', sol:k, ok:v => casi(v, k), exp:k + '² = ' + k * k + ', así que la raíz es ' + k + '.', pon:k <= 10 ? () => { patio.losas = k * k; } : null};
+  }},
+  raizEntera: {n:'La raíz entera', sala:'patio', gen(){
+    let n; do{ n = al(2, 200); }while(Number.isInteger(Math.sqrt(n)));
+    const k = Math.floor(Math.sqrt(n));
+    return {t:'√' + n + ' no es entera. ¿Entre qué dos enteros está? Di <b>el menor</b>.', sol:k, ok:v => casi(v, k), exp:k + '² = ' + k * k + ' < ' + n + ' < ' + (k + 1) * (k + 1) + ' = ' + (k + 1) + '². Entre ' + k + ' y ' + (k + 1) + '.', pon:n <= 100 ? () => { patio.losas = n; } : null};
+  }},
+  afinada: {n:'La raíz afinada', sala:'aljibe', gen(){
+    let n; do{ n = al(2, 99); }while(Number.isInteger(Math.sqrt(n)));
+    const b = Math.floor(Math.sqrt(n)); let d = b; for(let i = 9; i >= 0; i--){ const v = redondo(b + i / 10, 1); if(v * v <= n){ d = v; break; } }
+    return {t:'Con <b>una cifra decimal</b>: ¿cuál es el mayor lado cuyo cuadrado no pasa de ' + n + '?', sol:d, ok:v => casi(v, d, .001), exp:cifra(d, 1) + '² = ' + cifra(d * d, 2) + ' ≤ ' + n + ' y ' + cifra(d + .1, 1) + '² = ' + cifra((d + .1) * (d + .1), 2) + ' > ' + n + '.',
+            pon:[2, 10, 20, 50, 70, 90].includes(n) ? () => { Object.assign(aljibe, {area:n, cifras:1, lado:d, intentos:0}); } : null};
+  }},
+  sino: {n:'Sí o no', sala:'tablero', bool:true, gen(){
+    const q = elige([
+      {t:'2⁹ es <b>dos por nueve</b>.', sol:'no', exp:'Es dos multiplicado por sí mismo nueve veces: 512. El nueve cuenta las veces.', pon(){ tablero.casilla = 10; }, sala:'tablero'},
+      {t:'2⁰ vale <b>uno</b>.', sol:'sí', exp:'Se define así para que «una casilla menos es la mitad» valga desde 2¹ = 2.', pon(){ tablero.casilla = 1; }, sala:'tablero'},
+      {t:'3⁴ · 3² es <b>3⁸</b>.', sol:'no', exp:'Es 3⁶: cuatro niveles y dos niveles apilados son seis. Los exponentes se suman, no se multiplican.', pon(){ Object.assign(arbol, {ramas:3, niveles:4, mas:2, veces:1}); }, sala:'arbol'},
+      {t:'(2³)² es <b>2⁶</b>.', sol:'sí', exp:'El mismo árbol de tres niveles, dos veces: seis niveles.', pon(){ Object.assign(arbol, {ramas:2, niveles:3, mas:0, veces:2}); }, sala:'arbol'},
+      {t:'Con 70 losas se hace un patio cuadrado <b>sin que sobre ninguna</b>.', sol:'no', exp:'Sale uno de 8 por 8 y sobran seis. 70 no es cuadrado perfecto.', pon(){ patio.losas = 70; }, sala:'patio'},
+      {t:'La raíz de 81 es <b>9</b>.', sol:'sí', exp:'9² = 81. Deshacer el cuadrado.', pon(){ patio.losas = 81; }, sala:'patio'},
+      {t:'La raíz de dos <b>acaba cuadrando</b> si se ponen bastantes cifras.', sol:'no', exp:'No es ninguna fracción. Se acerca cuanto se quiera y no cuadra nunca.', pon(){ Object.assign(aljibe, {area:2, cifras:2, lado:1.41, intentos:0}); }, sala:'aljibe'},
+      {t:'Sumando mil por casilla, el tesorero <b>acaba ganando</b> al doble.', sol:'no', exp:'El doble lo pasa en la casilla quince y ya no lo alcanza.', pon(){ Object.assign(tesorero, {suma:1000, hasta:24}); }, sala:'tesorero'},
+      {t:'2¹⁰ es <b>más</b> que 10³.', sol:'sí', exp:'1.024 contra 1.000. El millar del mago.', pon(){ tablero.casilla = 11; }, sala:'tablero'},
+      {t:'La casilla 64 tiene <b>2⁶⁴</b> granos.', sol:'no', exp:'Tiene 2⁶³: la primera tiene 2⁰, un grano, y cada casilla es una vez más. 2⁶⁴ − 1 es el tablero entero.', pon(){ tablero.casilla = 64; }, sala:'tablero'}
+    ]);
+    return {t:q.t, sol:q.sol, ok:v => String(v).trim().toLowerCase().replace('si', 'sí') === q.sol, exp:q.exp, pon:q.pon, sala:q.sala};
+  }}
+};
+
+const taller = {tipo:'potencia', ej:null, ac:0, racha:0, mejor:0, enTaller:false, corregido:false};
+function pintaTipos(){
+  const c = $('tipos'); c.innerHTML = '';
+  Object.keys(TIPOS).forEach(k => {
+    const b = document.createElement('button'); b.className = 'b'; b.textContent = TIPOS[k].n;
+    b.setAttribute('aria-pressed', String(taller.tipo === k));
+    b.addEventListener('click', () => { taller.tipo = k; pintaTipos(); nuevoEjercicio(); });
+    c.appendChild(b);
+  });
+  $('tAc').textContent = taller.ac; $('tRacha').textContent = taller.racha; $('tMejor').textContent = taller.mejor;
+}
+function nuevoEjercicio(){
+  const T = TIPOS[taller.tipo];
+  taller.ej = T.gen(); taller.corregido = false;
+  $('ejer').innerHTML = taller.ej.t;
+  $('verTaller').hidden = true; $('verlo').hidden = true;
+  $('filaSiNo').hidden = !T.bool; $('filaResp').hidden = !!T.bool;
+  if(!T.bool){ const r = $('resp'); r.value = ''; r.focus(); }
+}
+function corrige(dado){
+  const v = dado !== undefined ? dado : $('resp').value;
+  if(!String(v).trim() || taller.corregido) return;
+  const bien = taller.ej.ok(v);
+  const ver = $('verTaller'); ver.hidden = false;
+  ver.className = 'veredicto' + (bien ? ' bien' : '');
+  if(bien){ taller.ac++; taller.racha++; taller.mejor = Math.max(taller.mejor, taller.racha); ver.innerHTML = '<b>Bien.</b> ' + taller.ej.exp; Ruido.bien();
+            if(taller.racha === 8){ Ruido.magia(); ver.innerHTML += ' <i>Ocho seguidos. Listosín, sin levantar la vista del portapapeles: «Doblad eso y sois mago».</i>'; } }
+  else { taller.racha = 0; ver.innerHTML = 'No. La respuesta era <b>' + solTxt(taller.ej) + '</b>. ' + taller.ej.exp; Ruido.mal(); }
+  taller.corregido = true; $('verlo').hidden = !taller.ej.pon; pintaTipos(); guardaTurno();
+}
+function verEnSala(){ const e = taller.ej; if(!e || !e.pon) return; e.pon(); const s = e.sala || TIPOS[taller.tipo].sala; muestraSala(s); $(SALAS[s]).scrollIntoView({behavior:'smooth', block:'start'}); }
+function entraTaller(dentro){
+  taller.enTaller = dentro; $('bTaller').setAttribute('aria-pressed', String(dentro));
+  $('pTaller').hidden = !dentro; $('pEncargo').hidden = dentro; $('informe').hidden = dentro || !hechos.has(enc);
+  cierraPaneles();
+  if(dentro){ pintaTipos(); nuevoEjercicio(); for(const k in SALAS) $(SALAS[k]).hidden = true; } else pintaEncargo();
+}
+$('bTaller').addEventListener('click', () => entraTaller(!taller.enTaller));
+$('corrige').addEventListener('click', () => corrige());
+$('bSi').addEventListener('click', () => corrige('sí'));
+$('bNo').addEventListener('click', () => corrige('no'));
+$('resp').addEventListener('keydown', e => { if(e.key === 'Enter'){ taller.corregido ? nuevoEjercicio() : corrige(); } });
+$('otro').addEventListener('click', nuevoEjercicio);
+$('verlo').addEventListener('click', verEnSala);
+$('hojaDiez').addEventListener('click', () => {
+  const claves = Object.keys(TIPOS); const lista = [];
+  for(let i = 0; i < 10; i++) lista.push(TIPOS[claves[i % claves.length]].gen());
+  const limpia = h => h.replace(/<sup>\?<\/sup>/g, '^?').replace(/<[^>]+>/g, '');
+  $('hoja').innerHTML = '<h2>La corte de Jefarturo · hoja de práctica</h2>'
+    + '<div class="cab">Potencias y raíces · Nombre: ____________________ · Fecha: __________</div>'
+    + '<ol>' + lista.map(e => '<li>' + limpia(e.t) + '</li>').join('') + '</ol>'
+    + '<div class="clave"><h2>Clave del profesor</h2><ol>' + lista.map(e => '<li><b>' + solTxt(e) + '</b> — ' + limpia(e.exp) + '</li>').join('') + '</ol></div>';
+  document.body.classList.add('imprimiendo');
+  const fuera = () => { document.body.classList.remove('imprimiendo'); removeEventListener('afterprint', fuera); };
+  addEventListener('afterprint', fuera);
+  setTimeout(() => { print(); setTimeout(fuera, 800); }, 60);
+});
+
+$('bAjustes').addEventListener('click', () => { pintaAjustes(); $('mAjustes').hidden = false; });
+$('ajCerrar').addEventListener('click', () => { $('mAjustes').hidden = true; });
+$('mAjustes').addEventListener('click', e => { if(e.target.id === 'mAjustes') $('mAjustes').hidden = true; });
+
+function textoSello(){
+  const n = hechos.size, r = rangoDe(n), min = Math.max(1, Math.round((Date.now() - t0) / 60000));
+  const f = new Date(), fecha = f.toLocaleDateString('es-ES') + ' ' + f.toLocaleTimeString('es-ES', {hour:'2-digit', minute:'2-digit'});
+  const estado = {v:1, h:[...hechos], t:[taller.ac, taller.racha, taller.mejor], e:[...huevos], min};
+  const sello = 'CJF1.' + btoa(unescape(encodeURIComponent(JSON.stringify(estado)))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  const nombre = $('selloNombre').value.trim() || '(sin nombre)';
+  return 'LA CORTE DE JEFARTURO · carta real\n'
+    + 'El rey hace saber que ' + nombre + '\n'
+    + 'Fecha: ' + fecha + '\n'
+    + 'Oficio: ' + r.n + ' · ' + r.s + '\n'
+    + 'Cuentas: ' + n + ' de ' + ENCARGOS.length + (n ? ' · ' + [...hechos].sort((a, b) => a - b).map(i => i + 1).join(' ') : '') + '\n'
+    + 'Granos: ' + granosDe(n) + (n ? ' · 2' + sup(n) + ' − 1' : '') + '\n'
+    + 'Taller: ' + taller.ac + ' aciertos · racha ' + taller.racha + ' · mejor ' + taller.mejor + '\n'
+    + 'Hallazgos: ' + huevos.size + ' de ' + HUEVOS.length + (huevos.size ? ' · ' + [...huevos].map(h => HUEVO_DICE[h]).join(' · ') : '') + '\n'
+    + 'Tiempo en la corte: ' + min + ' min\n'
+    + 'Sello: ' + sello;
+}
+function pintaSello(){ $('selloTexto').innerHTML = textoSello().replace(/</g, '&lt;').replace(/(Sello: .*)/, '<span class="sello">$1</span>'); }
+$('bSello').addEventListener('click', () => { pintaSello(); $('mSello').hidden = false; $('selloAviso').textContent = ''; });
+$('selloCerrar').addEventListener('click', () => { $('mSello').hidden = true; });
+$('mSello').addEventListener('click', e => { if(e.target.id === 'mSello') $('mSello').hidden = true; });
+$('selloNombre').addEventListener('input', () => { pintaSello(); guardaTurno(); });
+$('selloCopiar').addEventListener('click', async () => {
+  const t = textoSello();
+  try{
+    if(navigator.clipboard && navigator.clipboard.writeText){ await navigator.clipboard.writeText(t); $('selloAviso').textContent = 'copiado'; return; }
+  }catch(e){}
+  const r = document.createRange(); r.selectNodeContents($('selloTexto'));
+  const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+  $('selloAviso').textContent = 'seleccionado: copie con el sistema';
+});
+
+const PASOS = [
+  {id:'franja',   t:'Tu oficio', d:'Empiezas de copero. Cada tres cuentas asciendes: senescal, chambelán, canciller, consejero del rey. Con las quince, mago de la corte: el puesto de Listosín.'},
+  {id:'granos',   t:'Los granos', d:'Se doblan con cada cuenta hecha, como en el tablero: uno, tres, siete, quince… Con las quince cuentas, 32.767. Es 2ⁿ − 1, una menos que la siguiente casilla.'},
+  {id:'pEncargo', t:'El encargo', d:'Jefarturo pide, en granos, losas y monedas. Se hace en la sala de abajo y se pulsa Comprobar. Contesta Listosín, con el portapapeles, y algo de magia.'},
+  {sel:'.fila',   t:'Los mandos', d:'Lo que se puede tocar: la casilla, las ramas y los niveles, las losas, el lado del aljibe, lo que suma el tesorero.'},
+  {sel:'.escena', t:'La escena', d:'El tablero, el árbol, el patio, el aljibe, la gráfica. Las cifras se escriben enteras: en la casilla 64, las veinte.'},
+  {sel:'.lectura',t:'La lectura', d:'La definición primero, y luego la cuenta de veces. Nunca una regla sin su árbol.'},
+  {id:'barra',    t:'La barra', d:'Taller para practicar libre, Salas para abrir cualquiera suelta, Glosario con las palabras de la corte, Deudas con lo que se define y lo que se demuestra, Carta real para llevarse la sesión y Ajustes para el campo.'}
+];
+let paso = 0;
+function elDe(p){
+  if(p.id) return $(p.id);
+  const sala = document.querySelector('#pTablero:not([hidden]), #pArbol:not([hidden]), #pPatio:not([hidden]), #pAljibe:not([hidden]), #pTesorero:not([hidden])');
+  return sala ? sala.querySelector(p.sel) : null;
+}
+function pintaPaso(){
+  const p = PASOS[paso], e = elDe(p);
+  if(!e){ paso++; if(paso >= PASOS.length){ cierraGuia(); return; } pintaPaso(); return; }
+  e.scrollIntoView({behavior:'smooth', block:'center'});
+  setTimeout(() => {
+    const r = e.getBoundingClientRect(), f = $('tourFoco');
+    f.style.top = (r.top - 6) + 'px'; f.style.left = (r.left - 6) + 'px'; f.style.width = (r.width + 12) + 'px'; f.style.height = (r.height + 12) + 'px';
+    const g = $('tourGlobo'); $('tourTit').textContent = p.t; $('tourTxt').textContent = p.d;
+    $('tourNum').textContent = (paso + 1) + ' de ' + PASOS.length;
+    $('tourSig').textContent = paso === PASOS.length - 1 ? 'Terminar' : 'Siguiente';
+    const abajo = r.bottom + 12, alto = g.offsetHeight || 140;
+    g.style.top = (abajo + alto < innerHeight - 8 ? abajo : Math.max(8, r.top - alto - 12)) + 'px';
+    g.style.left = Math.min(Math.max(12, r.left), innerWidth - (g.offsetWidth || 320) - 12) + 'px';
+    g.focus();
+  }, 320);
+}
+function abreGuia(){ entraTaller(false); cierraPaneles(); paso = 0; $('tourCapa').hidden = false; pintaPaso(); }
+function cierraGuia(){ $('tourCapa').hidden = true; }
+$('bGuia').addEventListener('click', abreGuia);
+$('tourSig').addEventListener('click', e => { e.stopPropagation(); paso++; if(paso >= PASOS.length) cierraGuia(); else pintaPaso(); });
+$('tourSalir').addEventListener('click', e => { e.stopPropagation(); cierraGuia(); });
+$('tourCapa').addEventListener('click', e => { if(e.target.id === 'tourCapa') cierraGuia(); });
+addEventListener('keydown', e => { if(e.key === 'Escape'){ cierraGuia(); $('mAjustes').hidden = true; $('mSello').hidden = true; } });
+
+{
+  const g = $('bootTablero'), c = 25;
+  for(let f = 0; f < 8; f++) for(let col = 0; col < 8; col++) el(g, 'rect', {x:col * c, y:f * c, width:c, height:c, fill:(f + col) % 2 ? '#2A2237' : '#211A2C'});
+  const rapido = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  for(let k = 0; k < 64; k++){
+    const f = Math.floor(k / 8), col = k % 8, r = 3 + k / 64 * 7;
+    el(g, 'circle', {cx:col * c + c / 2, cy:f * c + c / 2, r, fill:'#D9A441', class:'grano', style:'animation-delay:' + (rapido ? 0 : (.2 + 2.0 * Math.sqrt(k / 64)).toFixed(2)) + 's'});
+  }
+  el(g, 'circle', {cx:100, cy:100, r:70, fill:'#D9A441', class:'desborde'});
+  const lineas = ['tablero', 'árbol', 'patio', 'aljibe', 'tesoro'];
+  $('bootLista').innerHTML = lineas.map((l, i) => '<span style="animation-delay:' + (rapido ? 0 : .3 + i * .4) + 's">' + l + '</span>').join('');
+  const fuera = () => { const b = $('boot'); if(!b || b.classList.contains('fuera')) return; b.classList.add('fuera'); setTimeout(() => b.remove(), 600); };
+  $('boot').addEventListener('click', fuera);
+  setTimeout(fuera, rapido ? 300 : 3100);
+}
+
+$('ixDiag').addEventListener('click', () => {
+  const d = $('diag'); d.hidden = false; const li = [];
+  const di = (t, ok) => li.push('<div class="' + (ok ? 'ok' : 'ko') + '">' + (ok ? '✓ ' : '✗ ') + t + '</div>');
+  di('la casilla 64 tiene 9.223.372.036.854.775.808 granos, y el tablero 18.446.744.073.709.551.615', cifraBig(granosEn(64)) === '9.223.372.036.854.775.808' && cifraBig(totalHasta(64)) === '18.446.744.073.709.551.615');
+  di('cada casilla es el doble de la anterior, y el total hasta una casilla es una menos que la siguiente (64 pruebas)', (() => { for(let k = 1; k < 64; k++){ if(granosEn(k + 1) !== granosEn(k) * 2n) return false; if(totalHasta(k) !== granosEn(k + 1) - 1n) return false; } return true; })());
+  di('la casilla 11 tiene 1.024, el millar del mago', granosEn(11) === 1024n);
+  di('las cifras se escriben enteras y con puntos: 1.024 · 32.768 · 1.048.576', cifraBig(1024n) === '1.024' && cifraBig(32768n) === '32.768' && cifraBig(1048576n) === '1.048.576');
+  di('las hojas del árbol son ramas elevado a niveles (todas las combinaciones)', [2, 3, 4, 5].every(r => [0, 1, 2, 3, 4, 5].every(n => hojas({ramas:r, niveles:n, mas:0, veces:1}) === r ** n)));
+  di('apilar suma exponentes y repetir los multiplica: 3⁴·3² = 3⁶, (3²)³ = 3⁶', hojas({ramas:3, niveles:4, mas:2, veces:1}) === 729 && hojas({ramas:3, niveles:2, mas:0, veces:3}) === 729);
+  di('el nivel cero es una hoja: a⁰ = 1 para toda base', [2, 3, 4, 5].every(r => hojas({ramas:r, niveles:0, mas:0, veces:1}) === 1));
+  di('la raíz entera de 1 a 100 nunca se pasa ni se queda a más de un lado', (() => { for(let n = 1; n <= 100; n++){ const k = raizEntera(n); if(k * k > n || (k + 1) * (k + 1) <= n) return false; } return true; })());
+  di('hay diez cuadrados perfectos hasta cien, y 64 es uno', Array.from({length:100}, (_, i) => i + 1).filter(n => raizEntera(n) ** 2 === n).length === 10 && raizEntera(64) === 8 && raizEntera(70) === 8);
+  { const g = {...aljibe}; Object.assign(aljibe, {area:50, cifras:1, lado:7}); const c1 = candidatos(); Object.assign(aljibe, {area:50, cifras:2, lado:7}); const c2 = candidatos(); Object.assign(aljibe, g);
+    di('los lados del aljibe cercan √50: 7,0 y 7,1 con una cifra; 7,07 y 7,08 con dos', c1.includes(7) && c1.includes(7.1) && c2[0] === 7 && c2.includes(7.07) && c2.includes(7.08)); }
+  di('√2 no cuadra con ninguna de las cien centésimas entre 1,40 y 1,49', Array.from({length:10}, (_, i) => redondo(1.4 + i / 100, 2)).every(v => Math.abs(v * v - 2) > 1e-9));
+  di('doblar pasa a mil por casilla en la 15, a uno en la 3, a un millón en la 26', cruce(1000) === 15 && cruce(1) === 3 && cruce(1000000) === 26);
+  di('2¹⁰ > 10³ y 3⁴ > 4³', 2 ** 10 > 10 ** 3 && 3 ** 4 > 4 ** 3);
+  let ok6 = true, n6 = 0; for(const k in TIPOS) for(let i = 0; i < 80; i++){ const e = TIPOS[k].gen(); n6++;
+    const sol = typeof e.sol === 'string' ? e.sol : String(e.sol).replace('.', ',');
+    if(!e.ok(sol) || e.ok('999999999') || e.ok('') || !e.t || !e.exp) ok6 = false; }
+  di('los ' + Object.keys(TIPOS).length + ' generadores del taller aceptan su solución y rechazan basura (' + n6 + ' pruebas)', ok6);
+  { let ok7 = true; const g = [tablero.casilla, {...arbol}, patio.losas, {...aljibe}, {...tesorero}];
+    for(let i = 0; i < 40; i++) for(const k in TIPOS){ const e = TIPOS[k].gen(); if(e.pon) e.pon();
+      if(tablero.casilla < -3 || tablero.casilla > 64 || ![2,3,4,5].includes(arbol.ramas) || arbol.niveles < 0 || arbol.niveles > 5 || arbol.mas > 3 || arbol.veces > 3 || patio.losas < 1 || patio.losas > 100 || ![2,10,20,50,70,90].includes(aljibe.area)) ok7 = false; }
+    tablero.casilla = g[0]; Object.assign(arbol, g[1]); patio.losas = g[2]; Object.assign(aljibe, g[3]); Object.assign(tesorero, g[4]);
+    di('«verlo en la sala» deja los mandos en valores que existen (240 pruebas)', ok7); }
+  di('los ' + ENCARGOS.length + ' encargos apuntan a una sala que existe', ENCARGOS.every(e => SALAS[e.sala]));
+  di('cada encargo de opciones tiene UNA correcta, y todas explican', ENCARGOS.filter(e => e.ops).every(e => e.ops.filter(o => o.ok).length === 1 && e.ops.every(o => o.r && dicho(o.r).length > 20)));
+  di('cada encargo de manipulativo trae pre, bien y mal', ENCARGOS.filter(e => !e.ops).every(e => e.pre && e.bien && e.mal));
+  let ok8 = true; ENCARGOS.forEach(e => { if(e.ops) return; e.pre(); if(e.ok()) ok8 = false; });
+  di('ningún encargo de manipulativo está resuelto nada más abrirlo', ok8);
+  di('las ' + Object.keys(SALAS).length + ' salas tienen rótulo y pintor', Object.keys(SALAS).every(k => LEMAS[k] && PINTA[k]));
+  di('los oficios cubren las ' + ENCARGOS.length + ' cuentas y acaban en mago, con 32.767 granos', rangoDe(0).n === 'Copero' && rangoDe(ENCARGOS.length).n === 'Mago de la corte' && rangoDe(7).n === 'Chambelán' && granosDe(15) === '32.767');
+  di('los ' + HUEVOS.length + ' hallazgos tienen su frase', HUEVOS.every(h => HUEVO_DICE[h]));
+  d.innerHTML = li.join('');
+  pintaEncargo();
+});
+
+Object.keys(SALAS).forEach(k => {
+  const pan = $(SALAS[k]), [nom, lema] = LEMAS[k];
+  const rot = document.createElement('div'); rot.className = 'salaRot';
+  rot.innerHTML = '<b>' + nom + '</b><span>' + lema + '</span>'; pan.insertBefore(rot, pan.firstChild);
+});
+{
+  const d = leeTurno();
+  if(d){
+    enc = d.enc; d.hechos.forEach(i => { if(i >= 0 && i < ENCARGOS.length) hechos.add(i); });
+    (d.huevos || []).forEach(h => { if(HUEVO_DICE[h]) huevos.add(h); });
+    const t = d.taller || {}; taller.ac = t.ac|0; taller.racha = t.racha|0; taller.mejor = t.mejor|0;
+    if(d.aj) Object.keys(AJ).forEach(k => { if(d.aj[k] !== undefined) AJ[k] = d.aj[k]; });
+    if(d.nombre) $('selloNombre').value = d.nombre;
+    t0 = d.t0 || Date.now();
+    ultimoRango = rangoDe(hechos.size).n;
+  }
+  aplicaAjustes();
+  pintaEncargo();
+  armaQuieto();
+  document.addEventListener('pointerdown', () => Ruido.despierta(), {once:true});
+}
+
+
+{
+  const rej = document.createElement('div'); rej.className = 'aulaRejilla';
+  const izq = document.createElement('div'); izq.className = 'colIzq';
+  const der = document.createElement('div'); der.className = 'colDer';
+  const enc = $('pEncargo') || document.querySelector('.panel.encargo');
+  enc.parentNode.insertBefore(rej, enc);
+  rej.appendChild(izq); rej.appendChild(der);
+  izq.appendChild(enc);
+  const inf = $('informe'); if(inf) izq.appendChild(inf);
+  const rot = $('rotuloLibre'); if(rot) der.appendChild(rot);
+  Object.values(SALAS).forEach(id => { const p = $(id); if(p) der.appendChild(p); });
+  const pie = document.querySelector('footer.pie'), marca = document.createComment('pie');
+  if(pie) pie.before(marca);
+  const muda = si => { if(!pie) return; if(si) izq.appendChild(pie); else marca.after(pie); };
+
+  const pinta = () => {
+    const si = document.body.dataset.aula === 'si';
+    muda(si && innerWidth >= 1100);
+    const b = $('bAula');
+    if(b){ b.setAttribute('aria-pressed', String(si)); b.textContent = si ? 'Salir del aula' : 'Aula'; }
+  };
+  window.pintaAula = pinta;
+  addEventListener('resize', pinta);
+  $('bAula').addEventListener('click', () => { AJ.vista = AJ.vista === 'aula' ? 'normal' : 'aula'; aplicaAjustes(); guardaTurno(); });
+  pinta();
+}
+</script>
+</body></html>
